@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <div class="fullpag row">
+        <div class="part pagamentos"></div>
+    </div>
+    <table class="table borderless">
+        <tr>
+            <td>
+                <span class="item id col-xs-12 col-xs-40">
+                    <label>ID</label>
+                    <input type="text" name="idp[]" placeholder="ID" disabled="disabled"/>
+                </span>
+                <span class="item natureza col-xs-12 col-xs-50">
+                    <label>Natureza</label>
+                    <input type="text" name="naturezap[]" placeholder="Natureza"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item contad col-xs-12">
+                    <label>Conta Debitada</label>
+                    <input type="text" name="contad[]" placeholder="Conta Debitada"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item inicio data col-xs-12 col-xs-40">
+                    <label>Inicio - Data</label>
+                    <input type="date" name="pInicioData[]" placeholder="dd/mm/aaaa"/>
+                </span>
+                <span class="item inicio hora col-xs-12 col-xs-50">
+                    <label>Inicio - Hora</label>
+                    <input type="time" name="pInicioHora[]" placeholder="hh:mm"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item contac col-xs-12">
+                    <label>Conta Creditada</label>
+                    <input type="text" name="contac[]" placeholder="Conta Creditada"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item fim data col-xs-12 col-xs-40">
+                    <label>Final - Data</label>
+                    <input type="date" name="pFimData[]" placeholder="dd/mm/aaaa"/>
+                </span>
+                <span class="item fim hora col-xs-12 col-xs-50">
+                    <label>Final - Hora</label>
+                    <input type="time" name="pFimHora[]" placeholder="hh:mm"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item classe col-xs-12 col-xs-40">
+                    <label>Classe</label>
+                    <input type="text" name="classe" placeholder="Classe" disabled="disabled"/>
+                </span>
+                <span class="item ndoc col-xs-12 col-xs-50">
+                    <label>Nº Doc</label>
+                    <input type="text" name="ndoc[]" placeholder="Nº do Documento"/>
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span class="item valor col-xs-12">
+                    <label>Valor</label>
+                    <input type="text" class="money" data-symbol="R$ " data-thousands="."
+                           data-decimal="," name="valor[]"/>
+                </span>
+            </td>
+        </tr>
+    </table>
+</html>

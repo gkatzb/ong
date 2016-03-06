@@ -1,0 +1,7 @@
+[19-Jan-2016 20:50:38 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home/workanacazaon/public_html/formulario/index.php on line 534
+[19-Jan-2016 21:02:20 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected ' ' in /home/workanacazaon/public_html/formulario/index.php on line 986
+[20-Jan-2016 10:26:53 America/Sao_Paulo] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Quantidade' cannot be null' in /home/workanacazaon/public_html/formulario/index.php:641
+Stack trace:
+#0 /home/workanacazaon/public_html/formulario/index.php(641): PDOStatement->execute()
+#1 {main}
+  thrown in /home/workanacazaon/public_html/formulario/index.php on line 641

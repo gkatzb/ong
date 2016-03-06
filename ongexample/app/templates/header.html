@@ -1,0 +1,24 @@
+<?php
+/**
+* Created by PhpStorm.
+* User: Gabriela Katz
+* Date: 26/02/2016
+*/
+?>
+
+<script type="text/javascript" src="js/functions.js"></script>
+<script>
+	jQuery(document).ready(function() {
+		jQuery.noConflict();
+		load_template('.task_title', 'app/templates/task_title.html', false);
+	});
+</script>
+<div class="navbar-static-top col-md-12 col-xs-12">
+	<div class="col-md-6 col-xs-6 text-center">
+		<img src="images/logo.png" class="logo" />
+	</div>
+	<div class="col-md-6 col-xs-6 text-center">
+		<img src="images/complete_copie.png" />
+	</div>
+</div>
+<span class="navbar task_title"></span>

@@ -10,12 +10,12 @@
 		@include('includes.head')
 	</head>
 	<body>
-	<div class="container-fluid">
-		<header class="row">
+	<div class="container">
+		<header>
 			@include('includes.header')
 		</header>
 
-		<div id="main" class="row">
+		<div id="main">
 			@yield('content')
 		</div>
 

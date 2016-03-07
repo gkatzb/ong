@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Routing\Controller;
 
-class HomeController extends BaseController
+class HomeController extends Controller
 {
     public function index(){
         return view('index');

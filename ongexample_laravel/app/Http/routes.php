@@ -11,19 +11,12 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::group(['prefix' => '/'], function() {
+    Route::get('/', 'HomeController@index');
+    Route::post('/', array('as' => 'login', 'uses' => 'LoginController@search_login'));
 
-Route::group(['prefix' => 'matematica'], function () {
-    Route::get('/', 'MatematicaController@index');
-    Route::group(['prefix' => 'atividades'], function () {
-        Route::get('/{atividade}', ['uses' => 'MatematcaController@atividade']);
-    });
-});
-
-Route::group(['prefix' => 'portugues'], function () {
-    Route::get('/', 'PortuguesController@index');
-    Route::group(['prefix' => 'atividades'], function () {
-        Route::get('/{atividade}', ['uses' =>' PortuguesController@atividade']);
+    Route::group(array('namespace' => 'Materias'), function() {
+        Route::post('materias', array('as' => 'materias', 'uses' => 'MateriasController@index'));
     });
 });
 

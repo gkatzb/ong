@@ -4,15 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Foundation\Auth\User as Auth;
+use App\Usuario as Usuario;
 
 class LoginController extends Controller
 {
     public function search_login(Request $request){
-        //db query
-        $this->login(1);
+        $user = ['login' => $request->user, 'senha' => $request->password];
+
+        if(Auth::attempt($user)){
+            $token = Auth:: ->getAuthPassword
+            $this->login($token);
+        }
     }
 
-    public function login($params){
+    public function login($token){
         return redirect()->action('materias');
     }
 }

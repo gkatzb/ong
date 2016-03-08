@@ -5,8 +5,10 @@
 	font-family: calibri;
 }
 
-.wrapper-materias{
+.materias-container, .materias-container{
 	padding-left: 5%;
+	height: auto;
+	margin: 20px auto;
 }
 
 .page-title, .page-title::before{
@@ -15,7 +17,10 @@
 
 @media (max-width: 568px){
 	.page-title, .copyright{
-		font-size: 8pt;
+		font-size: 8pt !important;
+	}
+	.home-image{
+		width: 100% !important;
 	}
 }
 

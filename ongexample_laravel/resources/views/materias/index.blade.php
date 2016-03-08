@@ -1,27 +1,16 @@
 ﻿@extends('layouts.materias')
-@section('content')
-	<div class="container-fluid">
-		<div class="row">
-			<div class="home-img-container">
-				{!! Html::image('/assets/img/home.png', 'ONG', array('class' => 'home-image')) !!}
+
+@section('content_materia')
+	<div class="page-title wrapper disciplina-title">
+		<span>Escolha a disciplina:</span>
+	</div>
+	<div class="wrapper-materias">
+		<div class="col-sm-12 col-xs-12">
+			<div class="col-sm-6 col-xs-6">
+				{!! Html::image('/assets/img/portugues.png', 'ONG', array('class' => 'btn materia-img')) !!}
 			</div>
-		</div>
-		<div class="row">
-			<div class="login-container">
-				<div id="output"></div>
-				<div class="login-title">Login</div>
-				<div class="form-box">
-					{!! Form::open(array('url' => '/materias')) !!}
-					<div class="form-group">
-						<input name="user" type="text" placeholder="Usuário">
-						<input name="password" type="password" required placeholder="Senha">
-					</div>
-					<div class="form-group">
-						<button class="btn btn-info btn-md-6 login" type="submit">Entrar</button>
-						<button id="btn_cadastrar" class="btn btn-info btn-md-6 cadastro">Cadastrar</button>
-					</div>
-					{!! Form::close() !!}
-				</div>
+			<div class="col-sm-6 col-xs-6">
+				{!! Html::image('/assets/img/matematica.png', 'ONG', array('class' => 'btn materia-img')) !!}
 			</div>
 		</div>
 	</div>

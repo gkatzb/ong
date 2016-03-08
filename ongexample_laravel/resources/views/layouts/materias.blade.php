@@ -11,11 +11,13 @@
 	</head>
 	<body>
 	<div class="container">
-		<header class="row">
-			@include('includes.header')
-		</header>
+		<div id="main" class="container-fluid">
+			<header class="col-sm-12 col-xs-12">
+				@include('includes.header')
+			</header>
+		</div>
 
-		<div id="main" class="row">
+		<div id="materias" class="container-fluid text-center">
 			@yield('content_materia')
 		</div>
 

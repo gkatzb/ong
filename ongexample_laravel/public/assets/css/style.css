@@ -5,8 +5,38 @@
 	font-family: calibri;
 }
 
+.wrapper-materias{
+	padding-left: 5%;
+}
+
+.page-title, .page-title::before{
+	font-size: 30pt;
+}
+
+@media (max-width: 568px){
+	.page-title, .copyright{
+		font-size: 8pt;
+	}
+}
+
 #main{
 	margin-bottom: 5%;
+}
+
+.page-title, #materias{
+	margin-bottom: 8%;
+}
+
+#materias{
+	margin-top: 8%;
+}
+
+img{
+	width: 80%;
+}
+
+.header-img-logo, .header-img-children{
+	width: 70% !important;
 }
 
 .footer{
@@ -19,7 +49,7 @@
 	text-align: center;
 }
 
-.home-img-container{
+.home-img-container, .materias-img-container{
 	margin: auto;
 }
 
@@ -80,7 +110,7 @@
 
 }
 
-.form-box, .login-title{
+.form-box, .login-title, body, span{
 	font-family: "Comic Sans MS";
 	font-size: larger;
 }

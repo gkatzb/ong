@@ -11,14 +11,6 @@
 |
 */
 
-Route::group(['prefix' => '/'], function() {
-    Route::get('/', 'HomeController@index');
-    Route::post('/', array('as' => 'login', 'uses' => 'LoginController@search_login'));
-
-    Route::group(array('namespace' => 'Materias'), function() {
-        Route::post('materias', array('as' => 'materias', 'uses' => 'MateriasController@index'));
-    });
-});
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +24,10 @@ Route::group(['prefix' => '/'], function() {
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    Route::get('/', array('as' => 'home', 'uses' => 'LoginController@login'));
+    Route::group(['prefix' => '/'], function() {
+        Route::get('login', array('as' => 'home', 'uses' => 'LoginController@login'));
+        Route::post('login', array('as' => 'login', 'uses' => 'LoginController@do_login'));
+        Route::get('materias', array('as' => 'materias', 'uses' => 'MateriasController@index'));
+    });
 });

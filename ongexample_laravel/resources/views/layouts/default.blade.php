@@ -15,6 +15,7 @@
 
 		<div id="main">
 			@yield('content')
+			@yield('cadastro')
 		</div>
 
 		<footer class="footer">

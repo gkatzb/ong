@@ -24,3 +24,12 @@ function blur_e(e, s){
         $(e).blur();
     }
 }
+
+$(document).ready(function(){
+    $('#btn_cadastrar').on('click', function(){
+        $('.form-login').addClass('hidden');
+        $('.form-cadastro').removeClass('hidden');
+        $('.login-title').addClass('hidden');
+        $('.cadastro-title').removeClass('hidden');
+    });
+});

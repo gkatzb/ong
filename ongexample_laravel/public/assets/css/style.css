@@ -24,16 +24,8 @@
 	}
 }
 
-#main{
+#main, .page-title{
 	margin-bottom: 5%;
-}
-
-.page-title, #materias{
-	margin-bottom: 8%;
-}
-
-#materias{
-	margin-top: 8%;
 }
 
 img{
@@ -62,14 +54,17 @@ img{
 	width: 60%;
 }
 
-.login-container{
+.error-login, .login-container{
 	width: 300px;
 	margin: 20px auto;
+}
+
+.login-container{
 	background: #fff;
 	border: 1px solid #ccc;
 }
 
-.login-title{
+.login-title, .cadastro-title{
 	width: 100px;
 	margin: 10px auto 30px;
 	background-size: cover;
@@ -115,12 +110,12 @@ img{
 
 }
 
-.form-box, .login-title, body, span{
+.form-box, .login-title, body, span, .cadastro-title{
 	font-family: "Comic Sans MS";
 	font-size: larger;
 }
 
-.login-title{
+.login-title, .cadastro-title{
 	font-size: xx-large;
 }
 
@@ -149,7 +144,7 @@ img{
 	border-top: 0;
 }
 
-.form-box button.login, button.cadastro{
+.form-box button.login, a.cadastro{
 	margin-top:15px;
 	padding: 10px 20px;
 }

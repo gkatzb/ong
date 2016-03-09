@@ -31,7 +31,7 @@ class LoginController extends Controller
             $createUser = $user->insert_user($params);
             if($createUser)
                 return redirect('materias');
-            return redirect('/')->withErrors('O usuário ' . $params['login'] . 'já existe!');
+            return redirect('/')->withErrors('O usuário "' . $params['login'] . '" já existe!');
         }
     }
 

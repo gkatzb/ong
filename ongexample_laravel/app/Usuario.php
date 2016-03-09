@@ -17,7 +17,7 @@ class Usuario extends Model
         ->where('senha', $params['password'])
         ->first();
 
-        if ($users > 0)
+        if (count($users) > 0)
             return true;
         return false;
     }
@@ -27,7 +27,7 @@ class Usuario extends Model
         ->where('login', $params['login'])
         ->first();
 
-        if ($users > 0)
+        if (count($users) > 0)
             return true;
         return false;
     }

@@ -1,9 +1,540 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="430b1861-85ba-4698-b207-e9d9a84f0e9b" name="Default" comment="" />
-    <ignored path="thiago.iws" />
+    <list default="true" id="d0fdf205-645d-4a43-9d6f-7b74abba8ba7" name="Default" comment="Project struc">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Listeners/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Policies/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/abacate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/abacaxi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/abelha.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/anel.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/children.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/complete_copie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/matematica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/img/portugues.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.env.example" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ongexample.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Atividade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Console/Commands/Inspire.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Events/Event.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/AtividadesController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/PasswordController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Materias/MatematicaController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/MateriasController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Requests/Request.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Jobs/Job.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Materia.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Perfil.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Usuario.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/artisan" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/autoload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/_bourbon-deprecated-upcoming.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/_bourbon.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-color.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-radius.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-style.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_border-width.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_buttons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_clearfix.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_ellipsis.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_font-stacks.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_hide-text.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_margin.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_padding.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_position.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_prefixer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_retina-image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_size.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_text-inputs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_timing-functions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_triangle.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/addons/_word-wrap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_animation.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_appearance.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_backface-visibility.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_background-image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_background.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_border-image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_calc.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_columns.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_filter.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_flex-box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_font-face.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_font-feature-settings.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_hidpi-media-query.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_hyphens.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_image-rendering.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_keyframes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_linear-gradient.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_perspective.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_placeholder.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_radial-gradient.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_selection.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_text-decoration.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_transform.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_transition.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/css3/_user-select.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_assign-inputs.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_contains-falsy.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_contains.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-length.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-light.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-number.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_is-size.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_modular-scale.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_px-to-em.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_px-to-rem.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_shade.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_strip-units.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_tint.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_transition-property-name.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/functions/_unpack.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_convert-units.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_directional-values.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_font-source-declaration.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_gradient-positions-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-angle-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-gradient-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-positions-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_linear-side-corner-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-arg-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-gradient-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_radial-positions-parser.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_render-gradients.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_shape-size-stripper.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/helpers/_str-to-num.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_asset-pipeline.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_prefixer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bourbon/settings/_px-to-em.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/app.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/broadcasting.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/cache.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/compile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/filesystems.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/mail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/queue.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/services.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/session.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/view.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/factories/ModelFactory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_03_08_143707_tables_creation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2016_03_08_192715_populate_perfil_materia_atividade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpunit.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/web.config" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/emails/password.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/matematica/atividades/ache_os_numeros.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/matematica/atividades/modelo_corpo_atividade.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/matematica/atividades/qtd_certa.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/matematica/atividades/somas.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/matematica/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_a.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_e.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_i.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_o.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_u.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/complete_letra_a.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/complete_letra_e.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/complete_letra_i.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/complete_letra_o.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/complete_letra_u.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/genero.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/modelo_corpo_atividade.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/plural.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/singular.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/substantivos.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/materias/portugues/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/includes/footer.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/includes/head.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/includes/header.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/atividades/atividade.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/atividades/default.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/materias.blade.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/logs/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/ExampleTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/TestCase.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Matematica/ache os numeros.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Matematica/mat_indice.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Matematica/qtd_certa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Matematica/somas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/Masculino e Feminino.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/Plural.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/Substantivos.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/ache_letra_A.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/ache_letra_E.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/ache_letra_I.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/ache_letra_O.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/ache_letra_U.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/complete_letra_A.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/complete_letra_E.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/complete_letra_I.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/complete_letra_O.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/complete_letra_U.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/port_indice.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Portugues/singular.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Pag1/Selecionar Tipo atividade.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/Telas/home.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Docs/exemplo.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/formulario.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/app/templates/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/app/templates/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/app/templates/task_title.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/autocomplete.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/css/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/css/clean.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/css/jquery.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/error_log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/abacate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/abacaxi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/abelha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/anel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/children.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/complete_copie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/includes/db/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/includes/db/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/includes/db/mysql.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/bootstrap-datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/cep_clean.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/gmaps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/inputmask.extensions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/inputmask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery-1.4.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery-ui-1.10.3.custom.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery.inputmask.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/jquery.maskMoney.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/js/moment-with-locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/templates/tmpl_pgto.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/templates/tmpl_pgto_remove.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/templates/tmpl_prodserv.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample/templates/tmpl_prodserv_remove.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.env.example" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/blade.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/ongexample.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/watcherTasks.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Atividade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Console/Commands/Inspire.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Console/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Events/Event.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Exceptions/Handler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/Auth/AuthController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/Auth/PasswordController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/HomeController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/LoginController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/Materias/MatematicaController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Controllers/MateriasController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Kernel.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Middleware/Authenticate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Middleware/EncryptCookies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Middleware/VerifyCsrfToken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/Requests/Request.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Http/routes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Jobs/Job.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Listeners/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Materia.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Perfil.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Policies/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Providers/AppServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Providers/AuthServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Providers/EventServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Providers/RouteServiceProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/app/Usuario.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/artisan" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bootstrap/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bootstrap/autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bootstrap/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/_bourbon-deprecated-upcoming.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/_bourbon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_border-color.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_border-style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_border-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_ellipsis.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_font-stacks.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_hide-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_margin.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_padding.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_position.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_prefixer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_retina-image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_text-inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_timing-functions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_triangle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/addons/_word-wrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_appearance.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_backface-visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_background-image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_background.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_border-image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_calc.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_columns.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_filter.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_flex-box.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_font-face.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_font-feature-settings.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_hidpi-media-query.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_hyphens.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_image-rendering.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_keyframes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_linear-gradient.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_perspective.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_placeholder.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_radial-gradient.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_selection.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_text-decoration.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_transform.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_transition.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/css3/_user-select.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_assign-inputs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_contains-falsy.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_contains.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_is-length.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_is-light.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_is-number.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_is-size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_modular-scale.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_px-to-em.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_px-to-rem.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_shade.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_strip-units.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_tint.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_transition-property-name.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/functions/_unpack.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_convert-units.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_directional-values.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_font-source-declaration.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_gradient-positions-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_linear-angle-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_linear-gradient-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_linear-positions-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_linear-side-corner-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_radial-arg-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_radial-gradient-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_radial-positions-parser.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_render-gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_shape-size-stripper.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/helpers/_str-to-num.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/settings/_asset-pipeline.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/settings/_prefixer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/bourbon/settings/_px-to-em.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/app.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/broadcasting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/compile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/database.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/filesystems.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/mail.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/queue.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/services.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/session.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/config/view.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/factories/ModelFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/migrations/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/migrations/2016_03_08_143707_tables_creation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/migrations/2016_03_08_192715_populate_perfil_materia_atividade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/seeds/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/database/seeds/DatabaseSeeder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/gulpfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/phpunit.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/abacate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/abacaxi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/abelha.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/anel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/children.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/complete_copie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/matematica.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/img/portugues.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/assets/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/public/web.config" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/assets/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/assets/sass/app.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/lang/en/auth.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/lang/en/pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/lang/en/passwords.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/lang/en/validation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/emails/password.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/login.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/matematica/atividades/ache_os_numeros.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/matematica/atividades/modelo_corpo_atividade.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/matematica/atividades/qtd_certa.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/matematica/atividades/somas.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/matematica/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/ache_letra_a.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/ache_letra_e.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/ache_letra_i.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/ache_letra_o.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/ache_letra_u.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/complete_letra_a.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/complete_letra_e.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/complete_letra_i.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/complete_letra_o.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/complete_letra_u.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/genero.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/modelo_corpo_atividade.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/plural.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/singular.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/atividades/substantivos.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/materias/portugues/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/passwords/email.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/passwords/reset.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/auth/register.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/default.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/errors/503.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/includes/footer.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/includes/head.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/includes/header.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/index.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/layouts/app.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/layouts/atividades/atividade.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/layouts/atividades/default.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/layouts/default.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/layouts/materias.blade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/resources/views/vendor/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/server.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/app/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/app/public/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/framework/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/framework/cache/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/framework/sessions/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/framework/views/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/storage/logs/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/tests/ExampleTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ongexample_laravel/tests/TestCase.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <ignored path="ongexample.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,15 +548,101 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="thiago" />
+    <favorites_list name="ongexample" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ongexample/.env">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18769716">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="materias.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/materias.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="10" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21727748">
+              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+              <folding>
+                <element signature="e#40#74#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="default.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/default.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="39" selection-end-column="3" />
+              <folding>
+                <element signature="e#7#385#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AtividadesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AtividadesController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding>
+                <element signature="e#40#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -33,10 +650,72 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ongexample/.env" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/ache_letra_e.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/ache_letra_i.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/ache_letra_o.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/ache_letra_u.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/complete_letra_a.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/complete_letra_e.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/complete_letra_i.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/atividades/complete_letra_o.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/portugues/index.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/assets/app.scss" />
+        <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/public/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/public/js/app.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Materias/MatematicaController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Materias/MateriasController.php" />
+        <option value="$PROJECT_DIR$/node_modules/bootstrap-sass/test/dummy_sass_only/Gemfile" />
+        <option value="$PROJECT_DIR$/resources/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/materias.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/materias/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/login.blade.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/modelo_corpo_atividade.blade.php" />
+        <option value="$PROJECT_DIR$/app/Usuario.php" />
+        <option value="$PROJECT_DIR$/config/auth.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MateriasController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/header.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/public/assets/js/jquery.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/css/font-awesome.css" />
+        <option value="$PROJECT_DIR$/public/assets/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/resources/views/includes/footer.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/head.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/materias/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Materia.php" />
+        <option value="$PROJECT_DIR$/app/Atividade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AtividadesController.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/main.js" />
       </list>
     </option>
   </component>
@@ -44,15 +723,48 @@
   <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
-    <option name="height" value="772" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -83,31 +795,31 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="thiago" />
+              <option name="myItemId" value="ongexample" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thiago" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thiago" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thiago" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thiago" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ongexample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ongexample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ong" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -117,53 +829,508 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\app\Http\Controllers" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\app\Http\Controllers\Materias" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\app\Http" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views\materias\portugues\atividades" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views\auth\materias\matematica" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views\auth\materias" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\resources\views\auth" />
+      <recent name="C:\xampp\htdocs\workana\thiago\ong\ongexample_laravel\node_modules" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="430b1861-85ba-4698-b207-e9d9a84f0e9b" name="Default" comment="" />
-      <created>1457015889834</created>
+      <changelist id="d0fdf205-645d-4a43-9d6f-7b74abba8ba7" name="Default" comment="" />
+      <created>1457019649786</created>
       <option name="number" value="Default" />
-      <updated>1457015889834</updated>
+      <updated>1457019649786</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="772" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33026114" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297546" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297546" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3220859" sideWeight="0.4969743" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ongexample/.env">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18769716">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state vertical-scroll-proportion="33.923077">
+          <caret line="705" column="20" selection-start-line="705" selection-start-column="20" selection-end-line="705" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33247423">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52089137">
+          <caret line="1901" column="36" selection-start-line="1901" selection-start-column="36" selection-end-line="1901" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Redirector.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14762741">
+          <caret line="154" column="25" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3550914">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/Authenticatable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.19843341">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.461538">
+          <caret line="474" column="51" selection-start-line="474" selection-start-column="51" selection-end-line="474" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/UserProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.096045196">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/GuardHelpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="14.384615">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Access/Authorizable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/Registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4412533">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="479" column="12" selection-start-line="479" selection-start-column="7" selection-end-line="479" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/Authenticatable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11016949">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Cookie/Middleware/AddQueuedCookiesToResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2193211">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Http/RedirectResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0600524">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Auth/RequestGuard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="47" column="62" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Auth/StatefulGuard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7101828">
+          <caret line="992" column="49" selection-start-line="992" selection-start-column="36" selection-end-line="992" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/ache_letra_a.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Session/Middleware/StartSession.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.7284596">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/materias/portugues/atividades/modelo_corpo_atividade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66853935">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.062663">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4673629">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.151436">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MateriasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3994778">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/atividades/atividade.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/atividades/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6214099">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4905663">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20782396">
+          <caret line="5" column="18851" selection-start-line="5" selection-start-column="18851" selection-end-line="5" selection-end-column="18851" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13315926">
+          <caret line="3" column="27303" selection-start-line="3" selection-start-column="27303" selection-end-line="3" selection-end-column="27303" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/footer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/head.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Materia.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/materias/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="69" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1775457">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Atividade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29166666">
+          <caret line="7" column="12" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AtividadesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#40#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/header.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/materias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="10" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/default.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="39" selection-end-column="3" />
+          <folding>
+            <element signature="e#7#385#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2225131">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4450262">
+          <caret line="202" column="67" selection-start-line="202" selection-start-column="67" selection-end-line="203" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21727748">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#40#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

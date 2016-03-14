@@ -1,8 +1,37 @@
+@font-face {
+	font-family: "Addis Adaba";
+	src: url(AddisAbaba.ttf) format("truetype");
+}
+
+header{
+	margin-bottom: 50px;
+}
+
+.header-atividade{
+	padding-top: 35px;
+}
+
+.materias-container{
+	margin-top: 100px;
+}
+
 .copyright{
 	text-color: #a6a6a6;
 	text-align: right;
 	font-size: 10pt;
 	font-family: calibri;
+}
+
+.disciplina-title{
+	text-align: center;
+}
+
+.login-logout{
+	margin-top: 20px;
+}
+
+.content-home{
+	min-height: 300px;
 }
 
 .materias-container, .materias-container{
@@ -11,8 +40,16 @@
 	margin: 20px auto;
 }
 
-.page-title, .page-title::before{
+.page-title, .page-title::before, .atividade-desc{
 	font-size: 30pt;
+}
+
+a{
+	text-decoration: none !important;
+}
+
+.atividade-desc{
+	vertical-align: middle;
 }
 
 @media (max-width: 568px){
@@ -28,8 +65,13 @@
 	margin-bottom: 5%;
 }
 
-.materia-img{
-	padding: 6px 12px;
+.img-btn{
+	padding-top: 15px;
+	width: 70%;
+}
+
+.img-atividade{
+	width: 35%;
 	cursor: pointer;
 }
 
@@ -52,7 +94,7 @@ img{
 }
 
 .home-img-container, .materias-img-container{
-	margin: auto;
+	margin-top: -40px;
 }
 
 .home-image{
@@ -60,8 +102,13 @@ img{
 }
 
 .error-login, .login-container{
-	width: 300px;
+	width: 400px;
 	margin: 20px auto;
+}
+
+.error-login{
+	font-size: 25px;
+	min-width: 400px;
 }
 
 .login-container{
@@ -115,8 +162,8 @@ img{
 
 }
 
-.form-box, .login-title, body, span, .cadastro-title{
-	font-family: "Comic Sans MS";
+.form-box, .login-title, body, span, .cadastro-title, .alert-font{
+	font-family: "Addis Adaba", "Comic Sans MS";
 	font-size: larger;
 }
 
@@ -124,14 +171,31 @@ img{
 	font-size: xx-large;
 }
 
+.btn-login{
+	font-size: 20px;
+	margin-right: 15px;
+	margin-left: 25px;
+}
+
+.btn-atividade{
+	min-width: 200px;
+	min-height: 80px;
+	font-size: 30px;
+}
+
+.form-group {
+	margin-bottom: 30px;
+}
+
 .form-box input{
 	width: 100%;
 	padding: 10px;
 	text-align: center;
-	height:40px;
+	height: auto;
 	border: 1px solid #ccc;;
 	background: #fafafa;
 	transition:0.2s ease-in-out;
+	font-size: 25px;
 
 }
 
@@ -152,6 +216,7 @@ img{
 .form-box button.login, a.cadastro{
 	margin-top:15px;
 	padding: 10px 20px;
+	min-width: 25px;
 }
 
 .animated {

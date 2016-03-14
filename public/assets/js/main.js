@@ -25,21 +25,15 @@ function blur_e(e, s){
     }
 }
 
+function playSound(filename){
+    document.getElementById("sound").innerHTML='<audio autoplay="autoplay"><source src="/assets/sounds/' + filename + '.mp3" type="audio/mpeg" /><embed hidden="true" autostart="true" loop="false" src="' + filename +'.mp3" /></audio>';
+}
+
 $(document).ready(function(){
-    $('#btn_cadastrar').on('click', function(){
+    $('#btn-cadastrar').on('click', function(){
         $('.form-login').addClass('hidden');
         $('.form-cadastro').removeClass('hidden');
         $('.login-title').addClass('hidden');
         $('.cadastro-title').removeClass('hidden');
-    });
-
-    $('#btn_materia').on('click', function(){
-        $.ajax({
-            url: 'atividades/' + $(this).attr('alt'),
-            type: 'GET',
-            success: function(data){
-                window.location.href = data['url'];
-            }
-        });
     });
 });

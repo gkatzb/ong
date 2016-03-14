@@ -17,11 +17,11 @@ class Authenticate
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::ckeck()) {
+        if (Auth::guest()) {
             if ($request->ajax() || $request->wantsJson()) {
                 return response('Unauthorized.', 401);
             } else {
-                //
+                return redirect()->guest('login');
             }
         }
 

@@ -2,29 +2,40 @@
 
 namespace App;
 
-use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use App\Materia;
 
-class Atividade extends Model implements AuthenticatableContract
+class Atividade extends Model
 {
-    use Authenticatable;
 
     protected $table = 'atividade';
-    protected $fillable = ['nome'];
-    protected $idMateria;
+    protected $primaryKey = 'id';
+    protected $fillable = ['id_materia', 'nome', 'img'];
 
-    public function get_atividade($params){
-        $materia = new Materia();
-        $this->idMateria = $materia->get_id_materia($params['nome_materia']);
-
-        $atividade = DB::table($this->table)
-            ->where('id_materia', $this->idMateria)
-            ->first();
-
-        if(!$atividade)
-            return false;
+    public function getAtividadeById($id){
+        $atividade = $this->find($id);
         return $atividade;
+    }
+
+    public function subatividades($atividadeId){
+        $subatividades = DB::table($this->table)
+            ->leftJoin('subatividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('atividade.id', $atividadeId)
+            ->get();
+        return $subatividades;
+    }
+
+    public function insertDesempenho($params){
+        if(!isset($checkUser)){
+            $user = DB::table('desempenho')->insert(
+                [
+                    'id_usuario' => $params['userId'],
+                    'id_subatividade' => $params['subatividadeId'],
+                    'erros' => 8]
+            );
+            return $this->checkUser($params);
+        }
+        return false;
     }
 }

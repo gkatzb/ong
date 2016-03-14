@@ -11,6 +11,22 @@
 |
 */
 
+Route::group(['middleware' => ['web']], function () {
+    Route::get('', array('as' => 'login', 'uses' => 'LoginController@index'));
+    Route::get('/', array('as' => 'login', 'uses' => 'LoginController@index'));
+
+    Route::group(['prefix' => '/'], function() {
+        Route::get('logout', array('as' => 'logout', 'uses' => 'LoginController@logout'));
+        Route::get('login', array('as' => 'login', 'uses' => 'LoginController@index'));
+        Route::post('login', array('as' => 'login', 'uses' => 'LoginController@login'));
+        Route::post('cadastrar', array('as' => 'cadastrar', 'uses' => 'LoginController@register'));
+        Route::get('', array('as' => 'login', 'uses' => 'LoginController@index'));
+        Route::get('home/{user_id}', array('as' => 'home', 'uses' => 'MateriasController@index'));
+        Route::get('materia/{materia_id}', array('as' => 'materia', 'uses' => 'MateriasController@atividade'));
+        Route::get('atividade/{atividade_id}', array('as' => 'atividade', 'uses' => 'AtividadesController@index'));
+        Route::post('atividade/{atividade_id}', array('as' => 'atividade', 'uses' => 'AtividadesController@cadastrarAtividade'));
+    });
+});
 
 /*
 |--------------------------------------------------------------------------
@@ -22,28 +38,19 @@
 | kernel and includes session state, CSRF protection, and more.
 |
 */
+
+/*Route::group(['middleware' => 'web'], function () {
+    //Route::auth();
+
+    Route::group(['prefix' => 'materias'], function() {
+        Route::get('', array('as' => 'materias', 'uses' => 'MateriasController@index'));
+       Route::get('/{user_id}', array('as' => 'materias', 'uses' => 'MateriasController@index'));
+    });
+});*/
 /*
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
 
-Route::model('user' , 'App\User');
-
-Route::controllers([
-    'auth' => 'Auth\AuthController',
-    'password' => 'Auth\PasswordController',
-]);*/
-
-Route::group(['middleware' => ['web']], function () {
-    Route::get('/', array('as' => 'home', 'uses' => 'LoginController@login'));
-    Route::group(['prefix' => '/'], function() {
-        Route::get('login', array('as' => 'home', 'uses' => 'LoginController@login'));
-        Route::post('login', array('as' => 'login', 'uses' => 'LoginController@do_login'));
-    });
+    Route::get('/home', 'HomeController@index');
 });
-
-Route::group(['middleware' => ['web']], function () {
-    Route::group(['prefix' => '/'], function() {
-        Route::get('materias/{userId}', array('before' => 'auth', 'as' => 'materias', 'uses' => 'MateriasController@index'));
-        Route::group(['prefix' => 'materias'], function() {
-            Route::get('/atividades/{materiaNome}', array('before' => 'auth', 'as' => 'atividades', 'uses' => 'AtividadesController@index'));
-        });
-    });
-});
+*/

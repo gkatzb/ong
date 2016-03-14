@@ -2,25 +2,26 @@
 
 namespace App;
 
-use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 
-class Materia extends Model implements AuthenticatableContract
+class Materia extends Model
 {
-    use Authenticatable;
 
     protected $table = 'materia';
-    protected $fillable = ['nome'];
+    protected $primaryKey = 'id';
+    protected $fillable = ['nome', 'img'];
 
-    public function get_id_materia($nome){
-        $materia = DB::table('materia')
-            ->where('nome', $nome)
-            ->first();
-
-        if(!$materia)
-            return false;
+    public function getMateriaById($id){
+        $materia = $this->find($id);
         return $materia;
+    }
+
+    public function getAtividades($materiaId){
+        $atividades = DB::table($this->table)
+            ->leftJoin('atividade', 'atividade.id_materia', '=', 'materia.id')
+            ->where('materia.id', $materiaId)
+            ->get();
+        return $atividades;
     }
 }

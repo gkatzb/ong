@@ -2,41 +2,32 @@
 
 namespace App;
 
-use Illuminate\Auth\Authenticatable;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Auth\Passwords\CanResetPassword;
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
-use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 
-class Usuario extends Model implements AuthenticatableContract, CanResetPasswordContract
-{
-    use Authenticatable, CanResetPassword;
+class Usuario extends Authenticatable{
 
     protected $table = 'usuario';
+    protected $primaryKey = 'id';
     protected $fillable = ['nome', 'login', 'senha'];
     protected $hidden = ['senha', 'remember_token'];
 
-    public function check_user($params){
+    public function checkUser($params){
         $user = DB::table($this->table)
             ->where('login', $params['login'])
             ->first();
-
-        if(!$user)
-            return false;
         return $user;
     }
 
-    public function insert_user($params){
-        $checkUser = $this->check_user($params);
+    public function insertUser($params){
+        $checkUser = $this->checkUser($params);
 
-        if(!$checkUser){
-            DB::table('usuario')->insert(
-                ['login' => $params['login'], 'senha' => $params['password'], 'id_perfil' => 1]
+        if(!isset($checkUser)){
+            $user = DB::table('usuario')->insert(
+                ['nome' => $params['nome'], 'login' => $params['login'], 'id_perfil' => 8]
             );
-            return true;
-        } else {
-            return false;
+            return $this->checkUser($params);
         }
+        return false;
     }
 }

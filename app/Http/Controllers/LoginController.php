@@ -8,43 +8,51 @@ use App\Usuario;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Foundation\Bus\DispatchesJobs;
 
 class LoginController extends Controller
 {
 
-    public function do_login(Request $request){
-        $params = [
-                    'login'     => $request->user,
-                    'password'  => $request->password,
-                    'type'      => $request->type,
-                    '_token'    => $request->_token
-                  ];
-        $user = new Usuario();
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-        if($params['type'] == 'login'){
-            $checkUser = $user->check_user($params);
-
-            if (Hash::check($params['password'], $checkUser->senha)) {
-                $userId = $checkUser->id;
-                $authUser = Auth::loginUsingId($userId);
-
-                if ($authUser) {
-                    return Redirect::route('materias', array('userId' => $authUser->id));
-                }
-            }
-
-            return redirect('/')->withErrors('Usuário ou senha inválidos!');
-        }
-
-        if($params['type'] == 'cadastro'){
-            $createUser = $user->insert_user($params);
-            if($createUser)
-                return redirect('materias');
-            return redirect('/')->withErrors('O usuário "' . $params['login'] . '" já existe!');
-        }
+    public function index(){
+        return view('auth.login');
     }
 
-    public function login(Usuario $user){
-        return view('index');
+    public function login(Request $request){
+        $params = [
+                    'login'     => $request->login,
+                    'remember_token'    => $request->_token
+                  ];
+
+        $user = new Usuario();
+        $user = $user->checkUser($params);
+
+        if(isset($user)){
+            if (Auth::loginUsingId($user->id))
+                return Redirect::intended(route('home', $user->id))->with('user', $user);
+        }
+        return redirect('/')->withErrors('Usuário ou senha inválidos!');
+    }
+
+    public function register(Request $request){
+        $params = [
+                    'nome'              => $request->nome,
+                    'login'             => $request->login,
+                    'remember_token'    => $request->_token
+                  ];
+        $user = new Usuario();
+        $createUser = $user->insertUser($params);
+        if(!$createUser)
+            return redirect('/')->withErrors('O usuário "' . $params['login'] . '" já existe!');
+        if (Auth::loginUsingId($createUser->id))
+            return Redirect::intended(route('home', $user->id))->with('user', $user);
+    }
+
+    public function logout(Request $request){
+        Auth::logout();
+        return redirect('/');
     }
 }

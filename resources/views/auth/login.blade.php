@@ -21,7 +21,6 @@
             </div>
             <div class="form-group">
                 <button class="btn btn-info btn-md-6 btn-login" type="submit">Entrar</button>
-                <a id="btn-cadastrar" class="btn btn-info btn-md-6 btn-login">Cadastrar</a>
             </div>
             {!! Form::close() !!}
 

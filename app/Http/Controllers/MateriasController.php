@@ -23,9 +23,9 @@ class MateriasController extends Controller
         $materias = $materia->all();
 
         if(isset($materias)) {
-            return view('home')->with('materias', $materias);
+            return view('home')->with(['materias' => $materias, 'user' => $this->user]);
         }
-        return view('home')->with(['Errors' => 'Nenhuma matéria cadastrada!', 'materias' => '']);
+        return view('home')->with(['Errors' => 'Nenhuma matéria cadastrada!', 'materias' => '', 'user' => $this->user]);
     }
 
     public function atividade(Materia $materia, $idMateria){
@@ -33,8 +33,8 @@ class MateriasController extends Controller
         $materia = $materia->getMateriaById($idMateria);
         $materias = $materia->all();
         if(isset($atividades)) {
-            return view('materia')->with(['atividades' => $atividades, 'materia' => $materia]);
+            return view('materia')->with(['atividades' => $atividades, 'materia' => $materia, 'user' => $this->user]);
         }
-        return view('home')->with(['Errors' => 'Nenhuma atividade cadastrada!', 'materias' => $materias]);
+        return view('home')->with(['Errors' => 'Nenhuma atividade cadastrada!', 'materias' => $materias, 'user' => $this->user]);
     }
 }

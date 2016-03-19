@@ -85,7 +85,8 @@ class AtividadesController extends Controller
             'id_usuario' => $this->user->id,
             'id_subatividade' => $request['hdn_subatividade_id'],
             'acertos' => $request['acertos'],
-            'erros' => $request['erros']
+            'erros' => $request['erros'],
+            'created_at' => \Carbon\Carbon::now()
         ];
         $desempenho = $atividade->insertDesempenho($data);
         $idSubatividade = $request['hdn_subatividade_id'];

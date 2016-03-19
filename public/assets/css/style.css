@@ -307,3 +307,13 @@ span{
 	margin-bottom: 45px;
 	margin-left: 20px;
 }
+
+.body, div, button, span, small, h1, h2, h3,
+h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
+	text-transform: uppercase !important;
+	font-family: "Addis Adaba", "Comic Sans MS";
+}
+
+.page-footer{
+	padding-top: 60px;
+}

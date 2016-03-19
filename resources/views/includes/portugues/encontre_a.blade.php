@@ -70,6 +70,7 @@
         $('#btn-atividade').on('click', function(){
             if(acertos < 4){
                 swal("Ops... Você ainda não encontrou todos!", "", "warning");
+                playSound('wrong');
             } else {
                 $("#subatividade"+$("#hdn_subatividade_id").val()).submit();
             }

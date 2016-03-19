@@ -23,4 +23,9 @@
 			@endforeach
 		</div>
 	</div>
+	<div class="container-fluid materias-container page-footer">
+		<div class="text-center col-sm-12">
+			<a href="{!! route('home', $user->id) !!}" class="text-center btn btn-info btn-lg-6 btn-atividade" id="btn-prev">Home</a>
+		</div>
+	</div>
 @stop

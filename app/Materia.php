@@ -19,7 +19,7 @@ class Materia extends Model
 
     public function getAtividades($materiaId){
         $atividades = DB::table($this->table)
-            ->leftJoin('atividade', 'atividade.id_materia', '=', 'materia.id')
+            ->join('atividade', 'atividade.id_materia', '=', 'materia.id')
             ->where('materia.id', $materiaId)
             ->get();
         return $atividades;

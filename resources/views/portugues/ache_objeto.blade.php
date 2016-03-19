@@ -5,7 +5,6 @@
 @stop
 @section('content')
 	@foreach($subatividades as $subatividade)
-		{!! Form::open(array('url' => '/atividade')) !!}
 		<div  class="subatividade hidden" id="subatividade{!! $subatividade->id !!}">
 			<div class="page-title wrapper disciplina-title">
 				<span>{!! $subatividade->nome !!}</span>
@@ -19,11 +18,7 @@
 					@include('includes.' . $materia->url . '.' . $subatividade->url)
 				</div>
 			</div>
-			<div class="form-group text-right">
-				<button class="btn btn-info btn-lg-6 btn-login" type="submit">Próximo</button>
-			</div>
 		</div>
-		{!! Form::close() !!}
 	@endforeach
 @stop
 @include('includes.scripts')

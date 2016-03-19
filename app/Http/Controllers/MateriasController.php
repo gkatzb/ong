@@ -14,7 +14,9 @@ class MateriasController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-        $this->user = Auth::user();
+        if(Auth::check()){
+            $this->user = Auth::user();
+        }
     }
 
     public function index(Materia $materia){

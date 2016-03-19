@@ -260,3 +260,50 @@ img{
 	-webkit-animation-name: fadeInUp;
 	animation-name: fadeInUp;
 }
+
+.erro{
+	color: red;
+}
+
+.acerto{
+	color: green;
+}
+
+span{
+	font-size: 30pt;
+}
+
+.numeros{
+	padding-left: 30px;
+	padding-right: 40px;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+	width: 100px !important;
+}
+
+.tb-bordered{
+	border-bottom: solid;
+	border-top: solid;
+	border-width: medium;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.r-bordered{
+	border-right: solid;
+	border-width: medium;
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.bordered{
+	border: solid;
+	border-width: medium;
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.tbl-numeros{
+	margin-bottom: 45px;
+	margin-left: 20px;
+}

@@ -21,6 +21,7 @@ Route::group(['middleware' => ['web']], function () {
         Route::post('login', array('as' => 'login', 'uses' => 'LoginController@login'));
         Route::post('cadastrar', array('as' => 'cadastrar', 'uses' => 'LoginController@register'));
         Route::get('', array('as' => 'login', 'uses' => 'LoginController@index'));
+        Route::get('desempenho/{user_id}', array('as' => 'desempenho', 'uses' => 'AtividadesController@desempenho'));
         Route::get('home/{user_id}', array('as' => 'home', 'uses' => 'MateriasController@index'));
         Route::get('materia/{materia_id}', array('as' => 'materia', 'uses' => 'MateriasController@atividade'));
         Route::get('atividade/{atividade_id}', array('as' => 'atividade', 'uses' => 'AtividadesController@index'));

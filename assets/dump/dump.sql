@@ -59,7 +59,7 @@ CREATE TABLE `desempenho` (
   `acertos` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -257,7 +257,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (21,8,'TESTE','TESTE','','QjxFi13mNHBkiiKGm6IqIhPIVMeGvKvn3741ziex474fEoESzFXxctwL8lEI',NULL,'2016-03-19 16:40:20');
+INSERT INTO `usuario` VALUES (21,8,'TESTE','TESTE','','VMaOKivWjuhYt0r28Prk5nI98julmnZbTMtbmXT8VivbOgiRuVJbO7fB7oWX',NULL,'2016-03-20 16:24:50');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -270,4 +270,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-19 11:16:48
+-- Dump completed on 2016-03-20 10:25:43

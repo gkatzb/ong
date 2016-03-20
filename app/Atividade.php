@@ -56,6 +56,7 @@ class Atividade extends Model
             ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
             ->where('usuario.id', '=', $userId)
             ->where('desempenho.id_subatividade', '=', $idSubatividade)
+            ->orderBy('desempenho.created_at', 'desc')
             ->get();
         return $desempenho;
     }

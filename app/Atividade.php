@@ -19,6 +19,10 @@ class Atividade extends Model
         return $this->getSubAtvdByAtvd($atividadeId);
     }
 
+    public function getSubatividade($atividadeId){
+        return $this->getSubAtvdById($atividadeId);
+    }
+
     public function getMateria($atividadeId){
         return $this->getMateriaByAtvd($atividadeId);
     }

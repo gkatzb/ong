@@ -37,3 +37,47 @@ $(document).ready(function(){
         $('.cadastro-title').removeClass('hidden');
     });
 });
+
+function btnPrevAtvd(toHide, toShow){
+    if(toShow == ''){
+        window.location.href = document.referrer;
+    } else {
+        $(toShow).removeClass('hidden');
+        $(toHide).addClass('hidden');
+    }
+}
+
+function btnNextAtvd(toHide, toShow, atvdId){
+    if(toShow == ''){
+        window.location.href = 'concluido/'+atvdId;
+    } else {
+        $(toShow).removeClass('hidden');
+        $(toHide).addClass('hidden');
+    }
+}
+
+function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId){
+    if(acertos < minTry){
+        swal("Ops... Você ainda não encontrou todos!", "", "warning");
+        playSound('wrong');
+    } else {
+        $.ajax({
+            url: 'desempenho',
+            method: 'post',
+            data: {
+                _token: $('#_token').val(),
+                subtvd_id: sbtvId,
+                erros: erros,
+                acertos: acertos
+            },
+            success: function () {
+                //
+            }
+        });
+        btnNextAtvd(toHide, toShow, atvdId);
+    }
+}
+
+$(document).ready(function () {
+    $('.subatividade').first().removeClass('hidden');
+});

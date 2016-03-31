@@ -64,7 +64,7 @@ class CreateTables extends Migration
             $table->integer('acertos');
             $table->timestamps();
             $table->foreign('id_usuario')->references('id')->on('perfil')->onDelete('cascade');
-            $table->foreign('id_subatividade')->references('id')->on('atividade')->onDelete('cascade');
+            $table->foreign('id_subatividade')->references('id')->on('subatividade')->onDelete('cascade');
         });
     }
 

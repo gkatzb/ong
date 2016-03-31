@@ -21,4 +21,10 @@ class Desempenho extends Model
         
         return $desempenho;
     }
+
+    public function getDesempenhoByAtvd($userId, $idAtividade){
+        $desempenho = $this->getAtvdDesempenho($userId, $idAtividade);
+
+        return $desempenho;
+    }
 }

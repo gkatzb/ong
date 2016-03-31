@@ -6,7 +6,7 @@
 @section('content')
 		<div  class="subatividade">
 			<div class="page-title wrapper disciplina-title">
-				<span>Seu desempenho:</span>
+				<span>Atividade Concluida! Seu desempenho:</span>
 			</div>
 			<div class="container-fluid materias-container">
 				<div class="col-sm-12 col-xs-12">

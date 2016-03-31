@@ -21,6 +21,21 @@ class CustomModel extends Model
         return $desempenho;
     }
 
+    protected function getAtvdDesempenho($userId, $idAtividade){
+        $desempenho = DB::table('desempenho')
+            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
+            ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
+            ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
+            ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('usuario.id', '=', $userId)
+            ->where('atividade.id', '=', $idAtividade)
+            ->groupBy('atividade.id')
+            ->orderBy('desempenho.created_at', 'desc')
+            ->get();
+            //->lists('acertos', 'erros');
+        return $desempenho;
+    }
+
     protected function getAtividadeById($id){
         $atividade = $this->find($id);
         return $atividade;
@@ -32,6 +47,22 @@ class CustomModel extends Model
             ->where('atividade.id', '=', $atividadeId)
             ->get();
         return $subatividades;
+    }
+
+    protected function getAtvdBySbtvd($subatividadeId){
+        $atividade = DB::table($this->table)
+            ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('subatividade.id', '=', $subatividadeId)
+            ->get();
+        return $atividade;
+    }
+
+    protected function getSubAtvdById($atividadeId){
+        $subatividade = DB::table($this->table)
+            ->join('subatividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('subatividade.id', '=', $atividadeId)
+            ->first();
+        return $subatividade;
     }
 
     protected function getMateriaByAtvd($atividadeId){

@@ -10,6 +10,7 @@ use App\Usuario;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 
 class AtividadesController extends Controller
@@ -30,12 +31,14 @@ class AtividadesController extends Controller
     public function index($atividadeId){
         $atividade = new Atividade();
 
-        $atividade = $atividade->getAtividade($atividadeId);
+        $atividade = $atividade->getAtividade($atividadeId, $subatvdId = 0);
         $materia = $atividade->getMateria($atividadeId);
         $subatividades = $atividade->getSubatividades($atividadeId);
+        $subatividade = $atividade->getSubatividade($atividadeId);
 
         return view('atividade')->with([
             'atividade' => $atividade,
+            'subatividade' => $subatividade,
             'subatividades' => $subatividades,
             'materia' => $materia,
         ]);
@@ -58,21 +61,39 @@ class AtividadesController extends Controller
         ]);
     }
 
+    public function concluido($atividadeId){
+        $atividade = new Atividade();
+        $desempenho = new Desempenho();
+
+        $atividade = $atividade->getAtividade($atividadeId, $subatvdId = 0);
+        $materia = $atividade->getMateria($atividadeId);
+        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $atividadeId);
+
+        return view('desempenho')->with([
+            'atividade' => $atividade,
+            'desempenho' => $desempenho[0],
+            'materia' => $materia,
+            'userId' => $this->userId
+        ]);
+    }
+
     public function cadastrarDesempenho(Request $request){
         $desempenho = new Desempenho();
 
         $data =  [
             'id_usuario' => $this->user->id,
-            'id_subatividade' => $request['hdn_subatividade_id'],
+            'id_subatividade' => $request['subtvd_id'],
             'acertos' => $request['acertos'],
             'erros' => $request['erros'],
         ];
         
         $desempenho = $desempenho->insertDesempenho($data);
-        $idSubatividade = $request['hdn_subatividade_id'];
+        $idSubatividade = $request['subtvd_id'];
 
-        if($desempenho)
-            return Redirect::intended(route('desempenho', $idSubatividade));
-        return Redirect::intended(route('desempenho', $idSubatividade))->withErrors('Ocorreu um erro ao cadastrar o desempenho');
+        return json_encode($desempenho);
+
+        //if($desempenho)
+            //return Redirect::intended(route('desempenho', $idSubatividade));
+        //return Redirect::intended(route('desempenho', $idSubatividade))->withErrors('Ocorreu um erro ao cadastrar o desempenho');
     }
 }

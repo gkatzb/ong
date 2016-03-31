@@ -2,26 +2,24 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
+use database\CustomModel as Model;
 
 class Materia extends Model
 {
 
     protected $table = 'materia';
     protected $primaryKey = 'id';
-    protected $fillable = ['nome', 'img'];
+    protected $fillable = ['nome', 'img', 'url'];
 
-    public function getMateriaById($id){
-        $materia = $this->find($id);
-        return $materia;
+    public function getMateria($id){
+        return $this->getMateriaById($id);
+    }
+
+    public function getMaterias(){
+        return $this->all();
     }
 
     public function getAtividades($materiaId){
-        $atividades = DB::table($this->table)
-            ->join('atividade', 'atividade.id_materia', '=', 'materia.id')
-            ->where('materia.id', $materiaId)
-            ->get();
-        return $atividades;
+        return $this->getAtividadesMateria($materiaId);
     }
 }

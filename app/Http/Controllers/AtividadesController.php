@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Atividade;
+use App\Desempenho;
 use App\Materia;
+use App\Subatividade;
 use App\Usuario;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller;
@@ -13,11 +15,6 @@ use Illuminate\Support\Facades\Redirect;
 class AtividadesController extends Controller
 {
 
-    protected $atividade;
-    protected $atividadeId;
-    protected $materia;
-    protected $atividades;
-    protected $subatividades;
     protected $user;
     protected $userId;
 
@@ -26,69 +23,52 @@ class AtividadesController extends Controller
         $this->middleware('auth');
         if(Auth::check()){
             $this->user = Auth::user();
-            $this->userId = Auth::user()->id;
+            $this->userId = $this->user->id;
         }
     }
 
-    public function index(Atividade $atividade, Materia $materia, $atividadeId){
-        $this->atividadeId = $atividadeId;
-        $this->atividade = $atividade->getAtividadeById($this->atividadeId);
-        $this->materia = $materia->find($this->atividade->id_materia);
-        $this->atividades = $this->materia->getAtividades($this->materia->id);
-        $this->subatividades = $this->atividade->subatividades($this->atividadeId);
+    public function index($atividadeId){
+        $atividade = new Atividade();
 
-        if(isset($this->subatividades)) {
-            return view('atividade')->with([
-                'subatividades' => $this->subatividades,
-                'atividade' => $this->atividade,
-                'materia' => $this->materia,
-                'userId' => $this->userId
-            ]);
-        }
-        return view('materia')->withErrors([
-                'Errors' => 'Atividade não cadastrada!',
-                'materia' => $this->materia,
-                'atividades' => $this->atividades,
-                'userId' => $this->userId
+        $atividade = $atividade->getAtividade($atividadeId);
+        $materia = $atividade->getMateria($atividadeId);
+        $subatividades = $atividade->getSubatividades($atividadeId);
+
+        return view('atividade')->with([
+            'atividade' => $atividade,
+            'subatividades' => $subatividades,
+            'materia' => $materia,
         ]);
     }
 
-    public function desempenho(Atividade $atividade, Materia $materia, $idSubatividade){
-        $desempenho = $atividade->getUserDesempenho($this->user->id, $idSubatividade);
-        $atividadeId = $atividade->getSubAtividadeById($idSubatividade)[0];
-        $atividadeId = $atividadeId->id;
-        $this->atividade = $atividade->getAtividadeById($atividadeId);
-        $this->materia = $materia->find($this->atividade->id_materia);
-        $this->atividades = $this->materia->getAtividades($this->materia->id);
-        $this->subatividades = $this->atividade->subatividades($atividadeId);
+    public function desempenho($idSubatividade){
+        $desempenho = new Desempenho();
+        $subatividade = new Subatividade();
 
-        if(isset($this->subatividades)) {
-            return view('desempenho')->with([
-                'subatividades' => $this->subatividades,
-                'atividade' => $this->atividade,
-                'desempenho' => $desempenho[0],
-                'materia' => $this->materia,
-                'userId' => $this->userId
-            ]);
-        }
-        return view('desempenho')->withErrors([
-            'Errors' => 'Atividade não cadastrada!',
-            'materia' => $this->materia,
-            'desempenho' => $desempenho,
-            'atividades' => $this->atividades,
+        $atividade = $subatividade->getAtividade($idSubatividade);
+        $materia = $subatividade->getMateria($idSubatividade);
+
+        $desempenho = $desempenho->getUserDesempenho($this->user->id, $idSubatividade);
+
+        return view('desempenho')->with([
+            'atividade' => $atividade[0],
+            'desempenho' => $desempenho[0],
+            'materia' => $materia[0],
             'userId' => $this->userId
         ]);
     }
 
-    public function cadastrarAtividade(Request $request, Atividade $atividade){
+    public function cadastrarDesempenho(Request $request){
+        $desempenho = new Desempenho();
+
         $data =  [
             'id_usuario' => $this->user->id,
             'id_subatividade' => $request['hdn_subatividade_id'],
             'acertos' => $request['acertos'],
             'erros' => $request['erros'],
-            'created_at' => \Carbon\Carbon::now()
         ];
-        $desempenho = $atividade->insertDesempenho($data);
+        
+        $desempenho = $desempenho->insertDesempenho($data);
         $idSubatividade = $request['hdn_subatividade_id'];
 
         if($desempenho)

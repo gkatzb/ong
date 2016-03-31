@@ -2,62 +2,24 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
-use App\Materia;
+use database\CustomModel as Model;
 
 class Atividade extends Model
 {
 
     protected $table = 'atividade';
     protected $primaryKey = 'id';
-    protected $fillable = ['id_materia', 'nome', 'img'];
+    protected $fillable = ['id_materia', 'nome', 'img', 'url'];
 
-    public function getAtividadeById($id){
-        $atividade = $this->find($id);
-        return $atividade;
+    public function getAtividade($id){
+        return $this->getAtividadeById($id);
     }
 
-    public function getSubAtividades($atividadeId){
-        $response = DB::table($this->table)
-        ->join('subatividade', 'atividade.id', '=', 'subatividade.id_atividade')
-        ->join('materia', 'atividade.id_materia', '=', 'materia.id')
-        ->where('atividade.id', '=', $atividadeId)
-        ->get();
-        return $response;
+    public function getSubatividades($atividadeId){
+        return $this->getSubAtvdByAtvd($atividadeId);
     }
 
-    public function getSubAtividadeById($atividadeId){
-        $response = DB::table($this->table)
-        ->join('subatividade', 'atividade.id', '=', 'subatividade.id_atividade')
-        ->join('materia', 'atividade.id_materia', '=', 'materia.id')
-        ->where('subatividade.id', '=', $atividadeId)
-        ->select('subatividade.id')
-        ->get();
-        return $response;
-    }
-
-    public function subatividades($atividadeId){
-        $subatividades = DB::table($this->table)
-            ->leftJoin('subatividade', 'subatividade.id_atividade', '=', 'atividade.id')
-            ->where('atividade.id', '=', $atividadeId)
-            ->get();
-        return $subatividades;
-    }
-
-    public function insertDesempenho($params){
-        $insert = DB::table('desempenho')->insert($params);
-        return $insert;
-    }
-
-    public function getUserDesempenho($userId, $idSubatividade){
-        $desempenho = DB::table('desempenho')
-            ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
-            ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
-            ->where('usuario.id', '=', $userId)
-            ->where('desempenho.id_subatividade', '=', $idSubatividade)
-            ->orderBy('desempenho.created_at', 'desc')
-            ->get();
-        return $desempenho;
+    public function getMateria($atividadeId){
+        return $this->getMateriaByAtvd($atividadeId);
     }
 }

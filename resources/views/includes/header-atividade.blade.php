@@ -19,9 +19,9 @@
 </div>
 <div class="container">
     <div class="col-sm-6 col-xs-6 navbar-left text-left">
-        {!! Html::image('/assets/img/header-1.png', 'ONG', array('class' => 'header-img-logo')) !!}
+        {!! Html::image('/assets/img/header-1.png', 'ONG', ['class' => 'header-img-logo']) !!}
     </div>
     <div class="col-sm-6 col-xs-6 navbar-right text-right header-atividade">
-        {!! Html::image($atividade->img, $atividade->nome, array('class' => 'header-img-children')) !!}
+        {!! Html::image($atividade->img, $atividade->nome, ['class' => 'header-img-children']) !!}
     </div>
 </div>

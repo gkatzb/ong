@@ -29,9 +29,11 @@ class MateriasController extends Controller
     }
 
     public function atividade(Materia $materia, $idMateria){
+        
         $atividades = $materia->getAtividades($idMateria);
-        $materia = $materia->getMateriaById($idMateria);
-        $materias = $materia->all();
+        $materia = $materia->getMateria($idMateria);
+        $materias = $materia->getMaterias();
+
         if(isset($atividades)) {
             return view('materia')->with(['atividades' => $atividades, 'materia' => $materia, 'user' => $this->user]);
         }

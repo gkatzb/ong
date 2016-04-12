@@ -1,6 +1,5 @@
 ﻿@extends('layouts.default')
 
-
 @section('content')
     <div class="row">
         <div class="home-img-container">
@@ -10,7 +9,8 @@
 
     <div class="login-container">
         <div id="output"></div>
-        <div class="login-title">Acessar</div>
+        <div class="login-subtitle">Coloque seu nome aqui</div>
+        {{--<div class="login-title">Acessar</div>--}}
         <div class="cadastro-title hidden">Cadastrar</div>
         <div class="form-box form-login">
             {!! Form::open(array('url' => '/login')) !!}
@@ -20,7 +20,7 @@
                 <input name="login" type="text" placeholder="Usuário">
             </div>
             <div class="form-group">
-                <button class="btn btn-info btn-md-6 btn-login" type="submit">Entrar</button>
+                <button class="btn btn-info btn-md-6 btn-login" type="submit">Começar</button>
             </div>
             {!! Form::close() !!}
 

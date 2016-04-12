@@ -33,6 +33,7 @@ Route::group(['middleware' => ['web']], function () {
         Route::group(['prefix' => 'atividade'], function(){
             Route::get('{atividade_id}', ['as' => 'atividade', 'uses' => 'AtividadesController@index']);
             Route::get('concluido/{atividade_id}', ['as' => 'concluido', 'uses' => 'AtividadesController@concluido']);
+            Route::get('relatorio', ['as' => 'relatorio', 'uses' => 'AtividadesController@concluido']);
             Route::post('desempenho', ['as' => 'desempenho', 'uses' => 'AtividadesController@cadastrarDesempenho']);
         });
 

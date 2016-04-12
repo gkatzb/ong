@@ -61,19 +61,23 @@ class AtividadesController extends Controller
         ]);
     }
 
-    public function concluido($atividadeId){
+    public function concluido(){
+        $materias = new Materia();
         $atividade = new Atividade();
-        $desempenho = new Desempenho();
+        $desemp = new Desempenho();
 
-        $atividade = $atividade->getAtividade($atividadeId, $subatvdId = 0);
-        $materia = $atividade->getMateria($atividadeId);
-        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $atividadeId);
+        $materia = $materias->all();
+        $atividade = $atividade->all();
+        $desempenho = $desemp->getDesempenhoByAtvd();
+        $relGeral = $desemp->getDesempenhoTotal();
 
         return view('desempenho')->with([
             'atividade' => $atividade,
-            'desempenho' => $desempenho[0],
+            'desempenho' => $desempenho,
             'materia' => $materia,
-            'userId' => $this->userId
+            'userId' => $this->userId,
+            'atvd_concluida' => true,
+            'relGeral' => $relGeral
         ]);
     }
 

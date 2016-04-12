@@ -33,7 +33,7 @@
         </div>
     </div>
     <footer class="footer">
-        @include('includes.footer')
+        {{--@include('includes.footer')--}}
     </footer>
 </div>
 </body>

@@ -98,7 +98,8 @@ img{
 }
 
 .home-image{
-	width: 60%;
+	width: 42%;
+	margin-top: -50px;
 }
 
 .error-login, .login-container{
@@ -112,6 +113,9 @@ img{
 }
 
 .login-container{
+	margin-top: -20px;
+	width: 360px!important;
+	height: 270px !important;
 	background: #fff;
 	border: 1px solid #ccc;
 }
@@ -305,7 +309,6 @@ span{
 
 .tbl-numeros{
 	margin-bottom: 45px;
-	margin-left: 20px;
 }
 
 .body, div, button, span, small, h1, h2, h3,
@@ -315,5 +318,34 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 }
 
 .page-footer{
-	padding-top: 60px;
+	padding-top: 0px;
+}
+
+.login-subtitle{
+	font-size: 20px;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+}
+
+.form-login{
+	margin-top: 35px;
+}
+
+.user-name-header{
+	font-size: 14pt;
+	margin-right: 20px;
+}
+
+.icon-atv-wait{
+	color: orange;
+	font-size: 60px;
+}
+
+.icon-atv-check{
+	color: green;
+	font-size: 60px;
+}
+
+.no-border{
+	border: none;
 }

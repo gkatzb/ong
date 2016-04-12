@@ -16,15 +16,13 @@ class Desempenho extends Model
         return $insert;
     }
 
-    public function getUserDesempenho($userId, $idSubatividade){
-        $desempenho = $this->getDesempenho($userId, $idSubatividade);
-        
-        return $desempenho;
+    public function getDesempenhoByAtvd(){
+        $desempenho = $this->getRelAtividade();
+        return $desempenho[0];
     }
 
-    public function getDesempenhoByAtvd($userId, $idAtividade){
-        $desempenho = $this->getAtvdDesempenho($userId, $idAtividade);
-
-        return $desempenho;
+    public function getDesempenhoTotal($userId, $idAtividade){
+        $relGeral = $this->getRelTotal($userId, $idAtividade);
+        return $relGeral[0];
     }
 }

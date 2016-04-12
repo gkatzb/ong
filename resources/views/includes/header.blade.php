@@ -13,6 +13,8 @@
 @else
     <div class="pull-right logout">
         {{ Auth::user()->name }}
+        <span class="user-name-header">Olá, {!! $user->login !!}!</span>
+        <a href="{!! route('concluido', 0) !!}" class="btn btn-lg btn-info">Gerar Relatório</a>
         {!! Html::link('logout', 'Sair', ['class' => "btn btn-lg btn-danger"]) !!}
     </div>
 @endif

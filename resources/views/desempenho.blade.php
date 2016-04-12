@@ -14,10 +14,18 @@
 			</div>
 			<div class="page-title wrapper col-sm-12 text-center">
 				<div class="col-sm-6 col-xs-6">
-					<span>Acertos: {!! $desempenho->acertos !!}</span>
+					<span>Acertos na atividade: {!! $desempenho->acertos !!}</span>
 				</div>
 				<div class="col-sm-6 col-xs-6">
-					<span>Erros: {!! $desempenho->erros !!}</span>
+					<span>Erros na atividade: {!! $desempenho->erros !!}</span>
+				</div>
+			</div>
+			<div class="page-title wrapper col-sm-12 text-center">
+				<div class="col-sm-6 col-xs-6">
+					<span>Acertos totais: {!! $relGeral->acertos !!}</span>
+				</div>
+				<div class="col-sm-6 col-xs-6">
+					<span>Erros totais: {!! $relGeral->erros !!}</span>
 				</div>
 			</div>
 			<div class="container-fluid col-sm-12 text-center">

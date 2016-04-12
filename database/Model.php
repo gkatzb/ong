@@ -21,7 +21,7 @@ class CustomModel extends Model
         return $desempenho;
     }
 
-    protected function getAtvdDesempenho($userId, $idAtividade){
+    protected function getRelAtividade($userId, $idAtividade){
         $desempenho = DB::table('desempenho')
             ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
             ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
@@ -32,7 +32,20 @@ class CustomModel extends Model
             ->groupBy('atividade.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
-            //->lists('acertos', 'erros');
+        return $desempenho;
+    }
+
+    protected function getRelTotal($userId, $idAtividade){
+        $desempenho = DB::table('desempenho')
+            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
+            ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
+            ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
+            ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('usuario.id', '=', $userId)
+            ->where('atividade.id', '=', $idAtividade)
+            ->groupBy('atividade.id')
+            ->orderBy('desempenho.created_at', 'desc')
+            ->get();
         return $desempenho;
     }
 

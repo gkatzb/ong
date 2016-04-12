@@ -86,6 +86,7 @@
         var erros = 0;
         var acertos = 0;
         var countRowAcertos = 0;
+        var dateIni = getDate();
 
         $('.img-atividade-num').on('click', function () {
             var rowId = $(this).closest('table').attr('id');
@@ -123,8 +124,9 @@
             var toShow = '';
             var erros = $("#erros-1").val();
             var acertos = $("#acertos-1").val();
+            var dateFim = getDate();
 
-            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 1);
+            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 1, dateIni, dateFim);
         });
 
         $('#btn-prev-1').on('click', function () {

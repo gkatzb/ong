@@ -45,7 +45,7 @@ class AtividadesController extends Controller
         ]);
     }
 
-    public function concluido($atividade_id){
+    public function concluido($atividade_id, $date_ini, $date_fim){
         $materias = new Materia();
         $atividade = new Atividade();
         $desempenho = new Desempenho();
@@ -53,7 +53,7 @@ class AtividadesController extends Controller
 
         $materia = $materias->all();
         $atividade = $atividade->getAtividade($acvtId);
-        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $acvtId);
+        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $acvtId, $date_ini, $date_fim);
         $pctAcertos = $desempenho->acertos/100;
         $pctAcertos = $pctAcertos*$desempenho->total;
 
@@ -76,11 +76,13 @@ class AtividadesController extends Controller
             'userId' => $this->userId,
             'atvdConcluida' => true,
             'message' => $message,
+            'date_ini' => $date_ini,
+            'date_fim' => $date_fim,
             'user' => $this->user
         ]);
     }
 
-    public function relatorio($atividade_id){
+    public function relatorio($atividade_id, $date_ini, $date_fim){
         $materias = new Materia();
         $atividade = new Atividade();
         $desepenho = new Desempenho();
@@ -88,7 +90,7 @@ class AtividadesController extends Controller
 
         $materia = $materias->all();
         $atividade = $atividade->getAtividade($acvtId);
-        $desepenho = $desepenho->getRelDesempenho($this->userId, $acvtId);
+        $desepenho = $desepenho->getRelDesempenho($this->userId, $acvtId, $date_ini, $date_fim);
 
         return view('desempenho')->with([
             'atividade' => $atividade,
@@ -96,6 +98,8 @@ class AtividadesController extends Controller
             'userId' => $this->userId,
             'atvdConcluida' => true,
             'desempenho' => $desepenho,
+            'date_ini' => $date_ini,
+            'date_fim' => $date_fim,
             'user' => $this->user
         ]);
     }
@@ -108,6 +112,8 @@ class AtividadesController extends Controller
             'id_subatividade' => $request['subtvd_id'],
             'acertos' => $request['acertos'],
             'erros' => $request['erros'],
+            'date_ini' => $request['date_ini'],
+            'date_fim' => $request['date_fim'],
         ];
         
         $desempenho = $desempenho->insertDesempenho($data);

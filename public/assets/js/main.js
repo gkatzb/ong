@@ -47,35 +47,60 @@ function btnPrevAtvd(toHide, toShow){
     }
 }
 
-function btnNextAtvd(toHide, toShow, atvdId){
+function btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim){
     if(toShow == ''){
-        window.location.href = atvdId+'/actvd-done';
+        window.location.href = atvdId+'/actvd-done/'+dateIni+'/'+dateFim;
     } else {
         $(toShow).removeClass('hidden');
         $(toHide).addClass('hidden');
     }
 }
 
-function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId){
+function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId, dateIni, dateFim){
     if(acertos < minTry){
         swal("Ops... Você ainda não encontrou todos!", "", "warning");
         playSound('wrong');
     } else {
         $.ajax({
-            url: 'desempenho',
+            url: atvdId+'/desempenho',
             method: 'post',
             data: {
                 _token: $('#_token').val(),
                 subtvd_id: sbtvId,
                 erros: erros,
-                acertos: acertos
+                acertos: acertos,
+                date_ini: dateIni,
+                date_fim: dateFim
             },
             success: function () {
-                //
+                btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim);
             }
         });
-        btnNextAtvd(toHide, toShow, atvdId);
     }
+}
+
+function getDate(){
+    var date = new Date();
+    var dd = date.getDate();
+    var mm = date.getMonth()+1; //January is 0!
+    var yyyy = date.getFullYear();
+    var hh = date.getHours();
+    var min = date.getMinutes();
+    var i = date.getSeconds();
+
+    if(dd<10) {
+        dd='0'+dd
+    }
+
+    if(mm<10) {
+        mm='0'+mm
+    }
+
+    var time = ('0'  + hh).slice(-2)+':'+('0'  + min).slice(-2)+':'+('0' + i).slice(-2);
+
+    date = yyyy+'-'+mm+'-'+dd+' '+time;
+
+    return date;
 }
 
 $(document).ready(function () {

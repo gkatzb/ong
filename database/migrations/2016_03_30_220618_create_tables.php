@@ -62,6 +62,8 @@ class CreateTables extends Migration
             $table->integer('id_subatividade')->unsigned();
             $table->integer('erros');
             $table->integer('acertos');
+            $table->datetime('date_ini');
+            $table->datetime('date_fim');
             $table->timestamps();
             $table->foreign('id_usuario')->references('id')->on('perfil')->onDelete('cascade');
             $table->foreign('id_subatividade')->references('id')->on('subatividade')->onDelete('cascade');

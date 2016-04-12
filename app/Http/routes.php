@@ -32,8 +32,8 @@ Route::group(['middleware' => ['web']], function () {
         // Atividades
         Route::group(['prefix' => 'atividade'], function(){
             Route::get('{atividade_id}', ['as' => 'atividade', 'uses' => 'AtividadesController@index']);
-            Route::get('{atividade_id}/actvd-done', ['as' => 'actvd-done', 'uses' => 'AtividadesController@concluido']);
-            Route::get('{atividade_id}/relatorio', ['as' => 'relatorio', 'uses' => 'AtividadesController@relatorio']);
+            Route::get('{atividade_id}/actvd-done/{date_ini}/{date_fim}', ['as' => 'actvd-done', 'uses' => 'AtividadesController@concluido']);
+            Route::get('{atividade_id}/relatorio/{date_ini}/{date_fim}', ['as' => 'relatorio', 'uses' => 'AtividadesController@relatorio']);
             Route::post('{atividade_id}/desempenho', ['as' => 'desempenho', 'uses' => 'AtividadesController@cadastrarDesempenho']);
         });
 

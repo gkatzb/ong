@@ -11,8 +11,12 @@ use Carbon\Carbon;
 
 class CustomModel extends Model
 {
-    protected function getDesempenho($userId, $atividadeId){
-        $today = Carbon::now()->toDateString();
+    protected function getDesempenho($userId, $atividadeId, $date_ini, $date_fim){
+        $date_ini = date_create_from_format('Y-m-d H:i:s', $date_ini);
+        $date_ini = date_format($date_ini, 'Y-m-d H:i:s');
+        $date_fim = date_create_from_format('Y-m-d H:i:s', $date_fim);
+        $date_fim = date_format($date_fim, 'Y-m-d H:i:s');
+
         $actvDesemp = DB::table('desempenho')
             ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
             ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
@@ -20,8 +24,9 @@ class CustomModel extends Model
             ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
             ->where('usuario.id', '=', $userId)
             ->where('atividade.id', '=', $atividadeId)
-            ->where('desempenho.created_at', 'like', $today.'%')
-            ->groupBy('subatividade.id')
+            ->where('desempenho.date_ini', '>=', $date_ini)
+            ->where('desempenho.date_fim', '<=', $date_fim)
+            ->groupBy('atividade.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
 
@@ -32,7 +37,7 @@ class CustomModel extends Model
             ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
             ->where('usuario.id', '=', $userId)
             ->where('atividade.id', '=', $atividadeId)
-            ->groupBy('desempenho.created_at')
+            ->groupBy('atividade.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
         $resp = [
@@ -42,7 +47,7 @@ class CustomModel extends Model
         return $resp;
     }
 
-    protected function getRelAtividade($userId, $idAtividade){
+    protected function getRelAtividade($userId, $idAtividade, $date_ini, $date_fim){
         $desempenho = DB::table('desempenho')
             ->selectRaw('sum(acertos) as acertos, sum(erros) as erros, (sum(acertos)+sum(erros)) as total')
             ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')

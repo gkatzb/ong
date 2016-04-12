@@ -33,13 +33,11 @@
 				if(acertos < 4){
 					$("#acertos").val(acertos++ + 1);
 				}
-				console.log(acertos+ " | " + $("#acertos").val());
 				swal("Parabéns, resposta certa!", "", "success");
 				playSound('claps');
 				$(this).next('span').addClass('acerto');
 			} else {
 				$("#erros").val(erros++ + 1);
-				console.log(erros+ " | " + $("#erros").val());
 				swal("Ops... Resposta errada!", "", "warning");
 				playSound('wrong');
 				$(this).next('span').addClass('erro');

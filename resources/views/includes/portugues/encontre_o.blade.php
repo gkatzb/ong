@@ -46,6 +46,7 @@
 
         var erros = 0;
         var acertos = 0;
+        var dateIni = getDate();
 
         $('.img-atividade-o').on('click', function () {
             if ($(this).attr('alt').substr(0, 1, $(this).attr('alt').length) == 'o') {
@@ -71,8 +72,9 @@
             var toShow = '.subatividade-8';
             var erros = $("#erros-7").val();
             var acertos = $("#acertos-7").val();
+            var dateFim = getDate();
 
-            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 4);
+            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 4, dateIni, dateFim);
         });
 
         $('#btn-prev-7').on('click', function () {

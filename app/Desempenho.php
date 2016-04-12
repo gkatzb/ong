@@ -9,20 +9,20 @@ class Desempenho extends Model
 
     protected $table = 'desempenho';
     protected $primaryKey = 'id';
-    protected $fillable = ['id_usuario', 'id_subatividade', 'erros', 'acertos',];
+    protected $fillable = ['id_usuario', 'id_subatividade', 'erros', 'acertos', 'date_ini', 'date_fim',];
 
     public function insertDesempenho($params){
         $insert = $this->create($params);
         return $insert;
     }
 
-    public function getDesempenhoByAtvd($userId, $acvtId){
-        $desempenho = $this->getRelAtividade($userId, $acvtId);
+    public function getDesempenhoByAtvd($userId, $acvtId, $date_ini, $date_fim){
+        $desempenho = $this->getRelAtividade($userId, $acvtId, $date_ini, $date_fim);
         return $desempenho[0];
     }
 
-    public function getRelDesempenho($userId, $idAtividade){
-        $desempenho = $this->getDesempenho($userId, $idAtividade);
+    public function getRelDesempenho($userId, $idAtividade, $date_ini, $date_fim){
+        $desempenho = $this->getDesempenho($userId, $idAtividade, $date_ini, $date_fim);
         return $desempenho;
     }
 

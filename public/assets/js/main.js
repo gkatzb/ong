@@ -49,7 +49,7 @@ function btnPrevAtvd(toHide, toShow){
 
 function btnNextAtvd(toHide, toShow, atvdId){
     if(toShow == ''){
-        window.location.href = 'concluido/'+atvdId;
+        window.location.href = atvdId+'/actvd-done';
     } else {
         $(toShow).removeClass('hidden');
         $(toHide).addClass('hidden');

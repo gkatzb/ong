@@ -14,7 +14,9 @@
     <div class="pull-right logout">
         {{ Auth::user()->name }}
         <span class="user-name-header">Olá, {!! $user->login !!}!</span>
-        <a href="{!! route('concluido', 0) !!}" class="btn btn-lg btn-info">Gerar Relatório</a>
+        @if(isset($atvdConcluida) && $atvdConcluida)
+            <a href="{!! route('relatorio', ['atividade_id' => $atividade->id]) !!}" class="btn btn-lg btn-info">Gerar Relatório</a>
+        @endif
         {!! Html::link('logout', 'Sair', ['class' => "btn btn-lg btn-danger"]) !!}
     </div>
 @endif

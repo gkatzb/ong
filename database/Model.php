@@ -7,23 +7,44 @@ namespace database;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use App\Card;
+use Carbon\Carbon;
 
 class CustomModel extends Model
 {
-    protected function getDesempenho($userId, $idSubatividade){
-        $desempenho = DB::table('desempenho')
+    protected function getDesempenho($userId, $atividadeId){
+        $today = Carbon::now()->toDateString();
+        $actvDesemp = DB::table('desempenho')
+            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
             ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
             ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
+            ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
             ->where('usuario.id', '=', $userId)
-            ->where('desempenho.id_subatividade', '=', $idSubatividade)
+            ->where('atividade.id', '=', $atividadeId)
+            ->where('desempenho.created_at', 'like', $today.'%')
+            ->groupBy('subatividade.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
-        return $desempenho;
+
+        $totalActvDesemp = DB::table('desempenho')
+            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
+            ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
+            ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
+            ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
+            ->where('usuario.id', '=', $userId)
+            ->where('atividade.id', '=', $atividadeId)
+            ->groupBy('desempenho.created_at')
+            ->orderBy('desempenho.created_at', 'desc')
+            ->get();
+        $resp = [
+            'actvDesemp' => $actvDesemp[0],
+            'totalActvDesemp' => $totalActvDesemp[0]
+        ];
+        return $resp;
     }
 
     protected function getRelAtividade($userId, $idAtividade){
         $desempenho = DB::table('desempenho')
-            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros')
+            ->selectRaw('sum(acertos) as acertos, sum(erros) as erros, (sum(acertos)+sum(erros)) as total')
             ->join('usuario', 'desempenho.id_usuario', '=', 'usuario.id')
             ->join('subatividade', 'desempenho.id_subatividade', '=', 'subatividade.id')
             ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
@@ -43,7 +64,7 @@ class CustomModel extends Model
             ->join('atividade', 'subatividade.id_atividade', '=', 'atividade.id')
             ->where('usuario.id', '=', $userId)
             ->where('atividade.id', '=', $idAtividade)
-            ->groupBy('atividade.id')
+            ->groupBy('user.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
         return $desempenho;

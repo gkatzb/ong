@@ -41,43 +41,62 @@ class AtividadesController extends Controller
             'subatividade' => $subatividade,
             'subatividades' => $subatividades,
             'materia' => $materia,
+            'user' => $this->user
         ]);
     }
 
-    public function desempenho($idSubatividade){
-        $desempenho = new Desempenho();
-        $subatividade = new Subatividade();
-
-        $atividade = $subatividade->getAtividade($idSubatividade);
-        $materia = $subatividade->getMateria($idSubatividade);
-
-        $desempenho = $desempenho->getUserDesempenho($this->user->id, $idSubatividade);
-
-        return view('desempenho')->with([
-            'atividade' => $atividade[0],
-            'desempenho' => $desempenho[0],
-            'materia' => $materia[0],
-            'userId' => $this->userId
-        ]);
-    }
-
-    public function concluido(){
+    public function concluido($atividade_id){
         $materias = new Materia();
         $atividade = new Atividade();
-        $desemp = new Desempenho();
+        $desempenho = new Desempenho();
+        $acvtId = $atividade_id;
 
         $materia = $materias->all();
-        $atividade = $atividade->all();
-        $desempenho = $desemp->getDesempenhoByAtvd();
-        $relGeral = $desemp->getDesempenhoTotal();
+        $atividade = $atividade->getAtividade($acvtId);
+        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $acvtId);
+        $pctAcertos = $desempenho->acertos/100;
+        $pctAcertos = $pctAcertos*$desempenho->total;
 
-        return view('desempenho')->with([
+        switch ($pctAcertos){
+            case $pctAcertos > 0.70:
+                $message = "Muito bom!";
+                break;
+            case $pctAcertos >= 0.35 && $pctAcertos <= 0.70:
+                $message = "Bom";
+                break;
+            case $pctAcertos < 0.35:
+                $message = "Tente novamente";
+                break;
+        }
+
+        return view('atvd-concluida')->with([
             'atividade' => $atividade,
             'desempenho' => $desempenho,
             'materia' => $materia,
             'userId' => $this->userId,
-            'atvd_concluida' => true,
-            'relGeral' => $relGeral
+            'atvdConcluida' => true,
+            'message' => $message,
+            'user' => $this->user
+        ]);
+    }
+
+    public function relatorio($atividade_id){
+        $materias = new Materia();
+        $atividade = new Atividade();
+        $desepenho = new Desempenho();
+        $acvtId = $atividade_id;
+
+        $materia = $materias->all();
+        $atividade = $atividade->getAtividade($acvtId);
+        $desepenho = $desepenho->getRelDesempenho($this->userId, $acvtId);
+
+        return view('desempenho')->with([
+            'atividade' => $atividade,
+            'materia' => $materia,
+            'userId' => $this->userId,
+            'atvdConcluida' => true,
+            'desempenho' => $desepenho,
+            'user' => $this->user
         ]);
     }
 

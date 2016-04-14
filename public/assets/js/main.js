@@ -47,16 +47,16 @@ function btnPrevAtvd(toHide, toShow){
     }
 }
 
-function btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim){
+function btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim, no_errors){
     if(toShow == ''){
-        window.location.href = atvdId+'/actvd-done/'+dateIni+'/'+dateFim;
+        window.location.href = atvdId+'/actvd-done/'+dateIni+'/'+dateFim+'/'+no_errors;
     } else {
         $(toShow).removeClass('hidden');
         $(toHide).addClass('hidden');
     }
 }
 
-function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId, dateIni, dateFim){
+function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId, dateIni, dateFim, no_errors){
     if(acertos < minTry){
         swal("Ops... Você ainda não encontrou todos!", "", "warning");
         playSound('wrong');
@@ -70,10 +70,11 @@ function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId, dateIni,
                 erros: erros,
                 acertos: acertos,
                 date_ini: dateIni,
-                date_fim: dateFim
+                date_fim: dateFim,
+                no_errors: no_errors
             },
             success: function () {
-                btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim);
+                btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim, no_errors);
             }
         });
     }

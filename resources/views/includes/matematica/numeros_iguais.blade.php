@@ -125,8 +125,13 @@
             var erros = $("#erros-1").val();
             var acertos = $("#acertos-1").val();
             var dateFim = getDate();
+            var no_errors = false;
 
-            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 1, dateIni, dateFim);
+            if(erros == 0){
+                no_errors = true;
+            }
+
+            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 1, dateIni, dateFim, no_errors);
         });
 
         $('#btn-prev-1').on('click', function () {

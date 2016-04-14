@@ -45,7 +45,7 @@ class AtividadesController extends Controller
         ]);
     }
 
-    public function concluido($atividade_id, $date_ini, $date_fim){
+    public function concluido($atividade_id, $date_ini, $date_fim, $no_errors = false){
         $materias = new Materia();
         $atividade = new Atividade();
         $desempenho = new Desempenho();
@@ -53,14 +53,18 @@ class AtividadesController extends Controller
 
         $materia = $materias->all();
         $atividade = $atividade->getAtividade($acvtId);
-        $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $acvtId, $date_ini, $date_fim);
+        $desempenho = $desempenho->getRelDesempenho($this->userId, $acvtId, $date_ini, $date_fim);
+        $desempenho = $desempenho['actvDesemp'];
 
-        $pctAcertos = ($desempenho->acertos)/100;
+        $pctAcertos = ($desempenho->acertos*100);
 
-        $pctAcertos = $pctAcertos*$desempenho->total;
+        $total = $desempenho->erros+$desempenho->acertos;
+
+        $pctAcertos = $pctAcertos/$total;
+        $pctAcertos = number_format($pctAcertos, 1);
 
         switch ($pctAcertos){
-            case $pctAcertos > 70.0:
+            case $pctAcertos > 70.0 || $no_errors == 'true':
                 $message = "Muito bom!";
                 break;
             case $pctAcertos >= 30.5 && $pctAcertos <= 70.0:

@@ -73,8 +73,13 @@
             var erros = $("#erros-4").val();
             var acertos = $("#acertos-4").val();
             var dateFim = getDate();
+            var no_errors = false;
 
-            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 4, dateIni, dateFim);
+            if(erros == 0){
+                no_errors = true;
+            }
+
+            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 4, dateIni, dateFim, no_errors);
         });
 
         $('#btn-prev-4').on('click', function(e){

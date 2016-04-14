@@ -54,17 +54,19 @@ class AtividadesController extends Controller
         $materia = $materias->all();
         $atividade = $atividade->getAtividade($acvtId);
         $desempenho = $desempenho->getDesempenhoByAtvd($this->userId, $acvtId, $date_ini, $date_fim);
-        $pctAcertos = $desempenho->acertos/100;
+
+        $pctAcertos = ($desempenho->acertos)/100;
+
         $pctAcertos = $pctAcertos*$desempenho->total;
 
         switch ($pctAcertos){
-            case $pctAcertos > 0.70:
+            case $pctAcertos > 70.0:
                 $message = "Muito bom!";
                 break;
-            case $pctAcertos >= 0.35 && $pctAcertos <= 0.70:
+            case $pctAcertos >= 30.5 && $pctAcertos <= 70.0:
                 $message = "Bom";
                 break;
-            case $pctAcertos < 0.35:
+            case $pctAcertos < 30.5:
                 $message = "Tente novamente";
                 break;
         }

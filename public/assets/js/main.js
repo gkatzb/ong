@@ -58,7 +58,7 @@ function btnNextAtvd(toHide, toShow, atvdId, dateIni, dateFim, no_errors){
 
 function minTry(sbtvId, minTry, acertos, erros, toHide, toShow, atvdId, dateIni, dateFim, no_errors){
     if(acertos < minTry){
-        swal("Ops... Você ainda não encontrou todos!", "", "warning");
+        swal("Ops... Você ainda não completou a atividade!", "", "warning");
         playSound('wrong');
     } else {
         $.ajax({

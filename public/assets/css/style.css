@@ -349,3 +349,16 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .no-border{
 	border: none;
 }
+
+.desemp-background{
+	position: absolute;
+	width: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+	margin-top: 300px;
+}
+
+.desemp-message{
+	z-index: 1;
+	margin-top: 200px;
+}

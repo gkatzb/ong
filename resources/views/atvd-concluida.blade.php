@@ -8,7 +8,7 @@
 	<div  class="subatividade">
 		<div class="page-title wrapper disciplina-title desemp-message">
 			<div class="row">
-				<span>{!! $message !!}</span>
+				<span class="desemp-message-text">{!! $message !!}</span>
 			</div>
 			<div class="row">
 				<br/>

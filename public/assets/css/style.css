@@ -360,5 +360,9 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 
 .desemp-message{
 	z-index: 1;
-	margin-top: 200px;
+	padding-top: 230px;
+}
+
+.desemp-message-text{
+	font-size: 40pt;
 }

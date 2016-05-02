@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/sounds/wrong.mp3" afterPath="$PROJECT_DIR$/public/assets/sounds/wrong.mp3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php" />
     </list>
     <ignored path="ong.iws" />
@@ -38,8 +37,8 @@
       <file leaf-file-name="somas.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="186" column="37" selection-start-line="186" selection-start-column="37" selection-end-line="186" selection-end-column="37" />
+            <state relative-caret-position="394">
+              <caret line="177" column="63" selection-start-line="177" selection-start-column="63" selection-end-line="177" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -470,12 +469,12 @@
       <workItem from="1461587863778" duration="21244000" />
       <workItem from="1461814336217" duration="6150000" />
       <workItem from="1462153529304" duration="8006000" />
-      <workItem from="1462163241476" duration="9885000" />
+      <workItem from="1462163241476" duration="10346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134906000" />
+    <option name="totallyTimeSpent" value="135367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -876,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="186" column="37" selection-start-line="186" selection-start-column="37" selection-end-line="186" selection-end-column="37" />
+        <state relative-caret-position="394">
+          <caret line="177" column="63" selection-start-line="177" selection-start-column="63" selection-end-line="177" selection-end-column="63" />
           <folding />
         </state>
       </provider>

@@ -175,8 +175,10 @@
                         $(this).attr('readonly', 'true');
                         $(this).unbind('click');
                         $(this).addClass('acerto');
-                        $(this).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
-                        $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
+                        if(!$(this).parent('div').find('.input-soma1').hasClass('erro')){
+                            $(this).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
+                            $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
+                        }
                     } else if($(this).val() != num2){
                         $("#erros-3").val($erros++);
                         $(this).addClass('erro');
@@ -186,6 +188,12 @@
                 });
             } else if ($acertos >= 11){
                 playSound('claps');
+                $(e).addClass('no-click');
+                $(e).attr('readonly', 'true');
+                $(e).unbind('click');
+                $(e).addClass('acerto');
+                $(e).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
+                $(e).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                 swal({
                             title: "Parabéns, você acertou todas as respostas!",
                             type: "success",

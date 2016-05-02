@@ -473,7 +473,12 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 
 .chk-qty, .load-qty{
 	float: right;
-	margin-top: 30px;
+	margin-top: 35px;
+}
+
+.check-qty-left{
+	margin-top: 38px;
+	margin-left: -85px !important;
 }
 
 .table-complete{

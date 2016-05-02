@@ -1,7 +1,9 @@
 ﻿<div class="container-fluid materias-container text-uppercase">
     <div class="col-sm-12 col-xs-12">
         <div class="col-sm-6 col-xs-6">
-            <i class="hidden icon-atv-check icon-atv-check-1 fa fa-check fa-3x margin-bottom"></i>
+            <div class="col-sm-1 col-xs-1">
+                <i class="hidden check-qty-left icon-atv-check icon-atv-check-1 fa fa-check fa-3x margin-bottom"></i>
+            </div>
             &nbsp;
             {!! Html::image('/assets/img/matematica/lobo.png', 'lobo', ['class' => 'lobo-pic img-qtd-pic qtd-1']) !!}
         </div>
@@ -13,7 +15,9 @@
     </div>
     <div class="col-sm-12 col-xs-12">
         <div class="col-sm-6 col-xs-6">
-            <i class="hidden icon-atv-check icon-atv-check-3 fa fa-check fa-3x margin-bottom"></i>
+            <div class="col-sm-1 col-xs-1">
+                <i class="check-qty-left hidden icon-atv-check icon-atv-check-3 fa fa-check fa-3x margin-bottom"></i>
+            </div>
             &nbsp;
             {!! Html::image('/assets/img/matematica/cavalos.png', 'cavalos', ['class' => 'cavalos-pic img-qtd-pic qtd-3']) !!}
         </div>
@@ -25,7 +29,9 @@
     </div>
     <div class="col-sm-12 col-xs-12">
         <div class="col-sm-6 col-xs-6">
-            <i class="hidden icon-atv-check icon-atv-check-2 fa fa-check fa-3x margin-bottom"></i>
+            <div class="col-sm-1 col-xs-1">
+                <i class="check-qty-left hidden icon-atv-check icon-atv-check-2 fa fa-check fa-3x margin-bottom"></i>
+            </div>
             &nbsp;
             {!! Html::image('/assets/img/matematica/focas.png', 'focas', ['class' => 'focas-pic img-qtd-pic qtd-2']) !!}
         </div>
@@ -37,7 +43,9 @@
     </div>
     <div class="col-sm-12 col-xs-12">
         <div class="col-sm-6 col-xs-6">
-            <i class="hidden icon-atv-check icon-atv-check-4 fa fa-check fa-3x margin-bottom"></i>
+            <div class="col-sm-1 col-xs-1">
+                <i class="check-qty-left hidden icon-atv-check icon-atv-check-4 fa fa-check fa-3x margin-bottom"></i>
+            </div>
             &nbsp;
             {!! Html::image('/assets/img/matematica/elefantes.png', 'elefantes', ['class' => 'elefantes-pic img-qtd-pic qtd-4']) !!}
         </div>

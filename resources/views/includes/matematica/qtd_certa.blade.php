@@ -77,7 +77,7 @@
                     $('.icon-atv-check-'+qtd).removeClass('hidden');
 
                     if(acertos < 4){
-                        $("#acertos-4").val(acertos++ + 1);
+                        $("#acertos-2").val(acertos++ + 1);
 
                         $('.img-qtd-num').each(function(e){
                             if(!($(this).hasClass('acerto'))){
@@ -111,21 +111,9 @@
                             $(this).addClass('no-click');
                             $(this).attr('disabled');
                         });
-
-                        var sbtvId = $("#subatividade-id").val();
-                        var toHide = '';
-                        var toShow = '';
-                        var dateFim = getDate();
-                        var no_errors = false;
-
-                        if(erros == 0){
-                            no_errors = true;
-                        }
-
-                        minTry(sbtvId, 4, acertos, erros, toHide, toShow, 4, dateIni, dateFim, no_errors);
                     }
                 } else if (clickNum != qtd){
-                    $("#erros-4").val(erros++ + 1);
+                    $("#erros-2").val(erros++ + 1);
                     swal("Ops... Resposta errada!", "", "warning");
                     playSound('wrong');
                 }
@@ -136,8 +124,24 @@
             num_click(this);
         });
 
-        $('#btn-prev-4').on('click', function(e){
-            var toHide = '.subatividade-4';
+        $('.btn-atividade-2').on('click', function (e) {
+            var sbtvId = $("#hdn_subatividade_id-2").val();
+            var toHide = '';
+            var toShow = '';
+            var erros = $("#erros-2").val();
+            var acertos = $("#acertos-2").val();
+            var dateFim = getDate();
+            var no_errors = false;
+
+            if(erros == 0){
+                no_errors = true;
+            }
+
+            minTry(sbtvId, 4, acertos, erros, toHide, toShow, 2, dateIni, dateFim, no_errors);
+        });
+
+        $('#btn-prev-2').on('click', function () {
+            var toHide = '';
             var toShow = '';
             btnPrevAtvd(toHide, toShow);
         });

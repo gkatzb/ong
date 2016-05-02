@@ -336,6 +336,11 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 	margin-right: 20px;
 }
 
+.icon-atv-error{
+	color: red;
+	font-size: 60px;
+}
+
 .icon-atv-wait{
 	color: orange;
 	font-size: 60px;
@@ -371,6 +376,54 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 	cursor: pointer;
 	width: 100%;
 	padding-bottom: 105px;
+}
+
+.img-soma{
+	width: 100%;
+	padding-bottom: 105px;
+}
+
+.resp-soma{
+	border: 0;
+	padding: 0;
+	border-bottom: solid;
+	border-bottom-width: medium;
+	line-height: 50px;
+	margin-top: 14px;
+	font-size: 30px;
+	text-align: center;
+	width: 90px !important;
+}
+
+.input-soma{
+	border: 0;
+	padding: 0;
+	border-bottom: solid;
+	border-bottom-width: medium;
+	line-height: 50px;
+	margin-top: -95px;
+	font-size: 30px;
+	text-align: center;
+	width: 90px !important;
+}
+
+.div-soma{
+	padding-bottom: 60px;
+	margin-top: -50px;
+}
+
+.inner-sum{
+	padding-left: 108px;
+}
+
+.check-img{
+	margin-left: -100px;
+	padding-top: 15px;
+}
+
+.span-sum{
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
 .img-qtd-num{

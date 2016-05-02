@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views/matematica/modelo_corpo_atividade.blade.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/matematica/cadeira.png" afterPath="$PROJECT_DIR$/public/assets/img/matematica/cadeira.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/matematica/chapeu.png" afterPath="$PROJECT_DIR$/public/assets/img/matematica/chapeu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/img/matematica/pino.png" afterPath="$PROJECT_DIR$/public/assets/img/matematica/pino.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/matematica/qtd_certa.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/matematica/qtd_certa.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/css/style.css" afterPath="$PROJECT_DIR$/public/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/matematica/somas.blade.php" afterPath="$PROJECT_DIR$/resources/views/matematica/somas.blade.php" />
     </list>
     <ignored path="ong.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,18 +34,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6613">
-              <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
+            <state relative-caret-position="206">
+              <caret line="339" column="14" selection-start-line="339" selection-start-column="14" selection-end-line="339" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qtd_certa.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/qtd_certa.blade.php">
+      <file leaf-file-name="somas.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,7 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ong/resources/views/materia.blade.php" />
         <option value="$PROJECT_DIR$/ong/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/ong/app/Http/Controllers/AtividadesController.php" />
         <option value="$PROJECT_DIR$/Docs/ong/app/Atividade.php" />
@@ -130,10 +135,11 @@
         <option value="$PROJECT_DIR$/resources/views/matematica/somas.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/scripts.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/matematica/numeros_iguais.blade.php" />
-        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/matematica/numeros_iguais.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/matematica/qtd_certa.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/matematica/qtd_certa.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php" />
       </list>
     </option>
   </component>
@@ -393,10 +399,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ong\resources\views\includes\matematica" />
+      <recent name="C:\xampp\htdocs\ong\resources\views\matematica" />
       <recent name="C:\xampp\htdocs\ong\resources\views" />
       <recent name="C:\xampp\htdocs\ong\resources\views\includes\portugues" />
       <recent name="C:\xampp\htdocs\ong\app" />
-      <recent name="C:\xampp\htdocs\ong\database" />
     </key>
   </component>
   <component name="RunManager">
@@ -460,12 +466,12 @@
       <workItem from="1461587863778" duration="21244000" />
       <workItem from="1461814336217" duration="6150000" />
       <workItem from="1462153529304" duration="8006000" />
-      <workItem from="1462163241476" duration="451000" />
+      <workItem from="1462163241476" duration="3786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125472000" />
+    <option name="totallyTimeSpent" value="128807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -525,20 +531,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/PerfilTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsuarioTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/AtividadeTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -807,13 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/matematica/somas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/scripts.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -825,14 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="52" column="32" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6613">
-          <caret line="389" column="0" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,10 +837,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/matematica/somas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/matematica/somas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/qtd_certa.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="115" column="31" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="339" column="14" selection-start-line="339" selection-start-column="14" selection-end-line="339" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/matematica/somas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>

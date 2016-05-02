@@ -8,6 +8,7 @@
 		{!! Form::open(array('url' => '/atividade')) !!}
 		{!! Form::hidden('erros', '', ['id' => 'erros']) !!}
 		{!! Form::hidden('acertos', '', ['id' => 'acertos']) !!}
+		{!! Form::hidden('subatividade-id', $subatividade->id, ['id' => 'subatividade-id']) !!}
 		<div  class="subatividade hidden" id="subatividade{!! $subatividade->id !!}">
 			<div class="page-title wrapper disciplina-title">
 				<span>{!! $subatividade->nome !!}</span>
@@ -21,17 +22,8 @@
 					@include('includes.' . $materia->url . '.' . $subatividade->url)
 				</div>
 			</div>
-			<div class="form-group text-right">
-				<button class="btn btn-info btn-lg-6 btn-login" type="submit">Finalizar</button>
-			</div>
 		</div>
 		{!! Form::close() !!}
 	@endforeach
 @stop
 @include('includes.scripts')
-<script>
-	$(document).ready(function(){
-		//if( $('.subatividade').attr('id') < $('.subatividade').attr('id') + 1 );
-		$('.subatividade').first().removeClass('hidden');
-	});
-</script>

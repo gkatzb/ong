@@ -122,7 +122,7 @@
         });
 
         function checkAnswers(e){
-            if($acertos < 12) {
+            if($acertos != 11) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
 
@@ -185,24 +185,32 @@
                     }
                 });
             } else if ($acertos >= 11){
-                swal("Parabéns, você acertou todas as respostas!", "", "success");
                 playSound('claps');
+                swal({
+                            title: "Parabéns, você acertou todas as respostas!",
+                            type: "success",
+                            showCancelButton: false,
+                            closeOnConfirm: true
+                        },
+                        function (isConfirm) {
+                            if (isConfirm) {
 
-                var sbtvId = $("#hdn_subatividade_id-3").val();
-                var toHide = '';
-                var toShow = '';
-                var erros = $("#erros-3").val();
-                var acertos = $("#acertos-3").val();
-                var dateFim = getDate();
-                var no_errors = false;
+                                var sbtvId = $("#hdn_subatividade_id-3").val();
+                                var toHide = '';
+                                var toShow = '';
+                                var erros = $("#erros-3").val();
+                                var acertos = $("#acertos-3").val();
+                                var dateFim = getDate();
+                                var no_errors = false;
 
-                if(erros == 0){
-                    no_errors = true;
-                }
+                                if(erros == 0){
+                                    no_errors = true;
+                                }
 
-                minTry(sbtvId, 6, acertos, erros, toHide, toShow, 3, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 6, acertos, erros, toHide, toShow, 3, $dateIni, dateFim, no_errors);
+                            }
+                        });
             }
-            console.log("erros: "+$erros+" | acertos: "+$acertos);
         }
 
         $('.btn-atividade-3').on('click', function (e) {

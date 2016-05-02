@@ -31,7 +31,6 @@
 @include('includes.scripts')
 <script>
 	$(document).ready(function(){
-		//if( $('.subatividade').attr('id') < $('.subatividade').attr('id') + 1 );
 		$('.subatividade').first().removeClass('hidden');
 	});
 </script>

@@ -39,30 +39,3 @@ Route::group(['middleware' => ['web']], function () {
 
     });
 });
-
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
-*/
-
-/*Route::group(['middleware' => 'web'], function () {
-    //Route::auth();
-
-    Route::group(['prefix' => 'materias'], function() {
-        Route::get('', ['as' => 'materias', 'uses' => 'MateriasController@index']);
-       Route::get('/{user_id}', ['as' => 'materias', 'uses' => 'MateriasController@index']);
-    });
-});*/
-/*
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-
-    Route::get('/home', 'HomeController@index');
-});
-*/

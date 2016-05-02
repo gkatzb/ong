@@ -366,3 +366,49 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .desemp-message-text{
 	font-size: 40pt;
 }
+
+.img-qtd-pic{
+	cursor: pointer;
+	width: 100%;
+	padding-bottom: 105px;
+}
+
+.img-qtd-num{
+	cursor: pointer;
+	width: 25%;
+	margin-left: 60%;
+	padding-top: 10px;
+}
+
+.img-qtd-border{
+	border-color: yellow;
+	border-style: solid;
+	border-width: thick;
+	border-radius: 30px;
+}
+
+.no-click{
+	opacity: 0.3;
+	cursor: auto;
+}
+
+.lobo-pic {
+	width: 30%;
+}
+
+.cavalos-pic {
+	width: 70%;
+}
+
+.focas-pic {
+	width: 55%;
+}
+
+.elefantes-pic {
+	width: 80%;
+}
+
+.chk-qty, .load-qty{
+	float: right;
+	margin-top: -75px;
+}

@@ -94,7 +94,6 @@
 
             if (rowId == imgId) {
                 countRowAcertos += countRowAcertos++ +1;
-                console.log(countRowAcertos);
                 if(countRowAcertos >= 2) {
                     $(this).closest('tr').find('.icon-atv-wait').addClass('hidden');
                     $(this).closest('tr').find('.icon-atv-check').removeClass('hidden');

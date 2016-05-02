@@ -269,8 +269,18 @@ img{
 	color: red;
 }
 
+.erro-tbl{
+	color: red;
+	border-color: black !important;
+}
+
 .acerto{
 	color: green;
+}
+
+.acerto-tbl{
+	color: green;
+	border-color: black !important;
 }
 
 span{
@@ -464,4 +474,55 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .chk-qty, .load-qty{
 	float: right;
 	margin-top: -75px;
+}
+
+.table-complete{
+	margin-top: -135px !important;
+	width: auto !important;
+	margin-left: 200px;
+}
+
+.line-task{
+	margin-bottom: 100px !important;
+}
+
+.line-margin-left{
+	margin-left: -105px;
+}
+
+.line-margin-right{
+	margin-left: 50px;
+}
+
+.task_input{
+	margin-bottom: -5px;
+	margin-right: -5px;
+	width: 50px !important;
+	height: 50px !important;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	border: solid;
+	border-radius: 3px !important;
+}
+
+.img-atividade-tbl{
+	width: 170px !important;
+	height: 170px !important;
+	cursor: auto;
+}
+
+.check-img-tbl-left{
+	margin-left: -85px;
+	padding-top: 38px;
+}
+
+.check-img-tbl-right{
+	float: right;
+	margin-right: -162px;
+	margin-top: -90px;
+}
+
+.icon-atv-check-tbl{
+	font-size: 90px;
 }

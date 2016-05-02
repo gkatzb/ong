@@ -101,7 +101,12 @@
 </div>
 @include('includes.scripts')
 <script>
+
     $(document).ready(function () {
+
+        var $erros = 0;
+        var $acertos = 0;
+        var $dateIni = getDate();
 
         $('.numeric').keydown(function (e) {
             if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
@@ -116,20 +121,17 @@
             }
         });
 
-        $('.btn-atividade-3').on('click', function (e) {
-
-            var erros = 0;
-            var acertos = 0;
-            var dateIni = getDate();
-
-            if(acertos < 12) {
+        function checkAnswers(e){
+            if($acertos < 12) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
 
                 $('.resp-soma').each(function(){
                     var sum = $(this).attr('id');
                     if($(this).val() == sum){
-                        $("#acertos-3").val(acertos++ + 1);
+                        if(!$(this).hasClass('acerto')){
+                            $("#acertos-3").val($acertos++);
+                        }
                         $(this).addClass('no-click');
                         $(this).attr('readonly', 'true');
                         $(this).unbind('click');
@@ -137,7 +139,7 @@
                         $(this).parent('div').next('div').find('.icon-atv-error').addClass('hidden');
                         $(this).parent('div').next('div').find('.icon-atv-check').removeClass('hidden');
                     } else if($(this).val() != sum){
-                        $("#erros-3").val(erros++ + 1);
+                        $("#erros-3").val($erros++);
                         $(this).addClass('erro');
                         $(this).parent('div').next('div').find('.icon-atv-error').removeClass('hidden');
                     }
@@ -146,7 +148,9 @@
                 $('.input-soma1').each(function(){
                     var num1 = $(this).attr('id');
                     if($(this).val() == num1){
-                        $("#acertos-3").val(acertos++ + 1);
+                        if(!$(this).hasClass('acerto')){
+                            $("#acertos-3").val($acertos++);
+                        }
                         $(this).addClass('no-click');
                         $(this).attr('readonly', 'true');
                         $(this).unbind('click');
@@ -154,7 +158,7 @@
                         $(this).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
                         $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                     } else if($(this).val() != num1){
-                        $("#erros-3").val(erros++ + 1);
+                        $("#erros-3").val($erros++);
                         $(this).addClass('erro');
                         $(this).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                         $(this).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
@@ -164,7 +168,9 @@
                 $('.input-soma2').each(function(){
                     var num2 = $(this).attr('id');
                     if($(this).val() == num2){
-                        $("#acertos-3").val(acertos++ + 1);
+                        if(!$(this).hasClass('acerto')){
+                            $("#acertos-3").val($acertos++);
+                        }
                         $(this).addClass('no-click');
                         $(this).attr('readonly', 'true');
                         $(this).unbind('click');
@@ -172,13 +178,13 @@
                         $(this).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
                         $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                     } else if($(this).val() != num2){
-                        $("#erros-3").val(erros++ + 1);
+                        $("#erros-3").val($erros++);
                         $(this).addClass('erro');
                         $(this).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                         $(this).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
                     }
                 });
-            } else if (acertos >= 12){
+            } else if ($acertos >= 11){
                 swal("Parabéns, você acertou todas as respostas!", "", "success");
                 playSound('claps');
 
@@ -194,8 +200,13 @@
                     no_errors = true;
                 }
 
-                minTry(sbtvId, 6, acertos, erros, toHide, toShow, 3, dateIni, dateFim, no_errors);
+                minTry(sbtvId, 6, acertos, erros, toHide, toShow, 3, $dateIni, dateFim, no_errors);
             }
+            console.log("erros: "+$erros+" | acertos: "+$acertos);
+        }
+
+        $('.btn-atividade-3').on('click', function (e) {
+            checkAnswers(e);
         });
 
         $('#btn-prev-3').on('click', function () {

@@ -213,7 +213,7 @@
                                     no_errors = true;
                                 }
 
-                                minTry(sbtvId, 21, acertos, erros, toHide, toShow, 13, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 21, acertos, erros, toHide, toShow, 5, $dateIni, dateFim, no_errors);
                             }
                         });
             }
@@ -235,15 +235,15 @@
                         $(this).parent('table').parent('div').find('.icon-atv-check').removeClass('hidden');
                     }
                     playSound('claps');
-                    /*swal({
+                    swal({
                         title: "Parabéns, a resposta está correta!",
                         type: "success",
                         showCancelButton: false,
                         closeOnConfirm: true
-                    });*/
+                    });
 
                 } else if($(this).val().toUpperCase() != letra){
-                    //swal("Ops... Resposta errada!", "", "warning");
+                    swal("Ops... Resposta errada!", "", "warning");
                     playSound('wrong');
                     $("#erros-13").val($erros++);
                     $(this).addClass('erro-tbl');

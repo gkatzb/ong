@@ -28,6 +28,7 @@ class LoginController extends Controller
                   ];
 
         $user = new Usuario();
+        $newUser = $this->register($params);
         $user = $user->checkUser($params);
 
         if(isset($user)){
@@ -37,13 +38,13 @@ class LoginController extends Controller
         return redirect('/')->withErrors('Usuário ou senha inválidos!');
     }
 
-    public function register(Request $request){
-        $params = [
-                    'nome'              => $request->nome,
-                    'login'             => $request->login,
-                    'remember_token'    => $request->_token
-                  ];
+    public function register($params){
         $user = new Usuario();
+        $checkUser = $user->checkUser($params);
+        if($checkUser){
+            $params['login'] = $params['login'] + rand(0,100);
+        }
+        $params['nome'] = $params['login'];
         $createUser = $user->insertUser($params);
         if(!$createUser)
             return redirect('/')->withErrors('O usuário "' . $params['login'] . '" já existe!');

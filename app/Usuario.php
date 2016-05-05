@@ -24,7 +24,7 @@ class Usuario extends Authenticatable{
 
         if(!isset($checkUser)){
             $user = DB::table('usuario')->insert(
-                ['nome' => $params['nome'], 'login' => $params['login'], 'id_perfil' => 8]
+                ['nome' => $params['nome'], 'login' => $params['login'], 'id_perfil' => 2]
             );
             return $this->checkUser($params);
         }

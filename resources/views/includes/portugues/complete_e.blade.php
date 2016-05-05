@@ -69,10 +69,10 @@
                             <input type="text" class="task_input" value="F"  readonly id="F" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A"  readonly id="A" maxlength="1" />
+                            <input type="text" class="task_input" value="A"  readonly id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="N"  readonly id="N" maxlength="1" />
+                            <input type="text" class="task_input" value="N"  readonly id="N" maxlength="1" />
                         </td>
                         <td>
                             <input type="text" class="task_input"  readonly value="T" id="T" maxlength="1" />
@@ -252,12 +252,12 @@
         var $acertos = 0;
         var $dateIni = getDate();
 
-        $('.btn-atividade-9').on('click', function(e){
-            if($acertos < 33) {
+        $('.btn-atividade-10').on('click', function(e){
+            if($acertos < 35) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
             }
-            else if ($acertos >= 33){
+            else if ($acertos >= 35){
                 playSound('claps');
                 $(e).addClass('no-click');
                 $(e).attr('readonly', 'true');
@@ -273,11 +273,11 @@
                         },
                         function (isConfirm) {
                             if (isConfirm) {
-                                var sbtvId = $("#hdn_subatividade_id-9").val();
-                                var toHide = '.subatividade-9';
-                                var toShow = '.subatividade-10';
-                                var erros = $("#erros-9").val();
-                                var acertos = $("#acertos-9").val();
+                                var sbtvId = $("#hdn_subatividade_id-10").val();
+                                var toHide = '.subatividade-10';
+                                var toShow = '.subatividade-11';
+                                var erros = $("#erros-10").val();
+                                var acertos = $("#acertos-10").val();
                                 var dateFim = getDate();
                                 var no_errors = false;
 
@@ -285,7 +285,7 @@
                                     no_errors = true;
                                 }
 
-                                minTry(sbtvId, 32, acertos, erros, toHide, toShow, 9, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 35, acertos, erros, toHide, toShow, 10, $dateIni, dateFim, no_errors);
                             }
                         });
             }
@@ -296,7 +296,7 @@
                 var letra = $(this).attr('id');
                 if($(this).val().toUpperCase() == letra){
                     if(!$(this).hasClass('acerto-tbl')){
-                        $("#acertos-9").val($acertos++);
+                        $("#acertos-10").val($acertos++);
                     }
                     $(this).addClass('no-click');
                     $(this).attr('readonly', 'true');
@@ -317,7 +317,7 @@
                 } else if($(this).val().toUpperCase() != letra){
                     swal("Ops... Resposta errada!", "", "warning");
                     playSound('wrong');
-                    $("#erros-9").val($erros++);
+                    $("#erros-10").val($erros++);
                     $(this).addClass('erro-tbl');
                     $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
                     $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');
@@ -325,9 +325,9 @@
             }
         });
 
-        $('#btn-prev-9').on('click', function(e){
-            var toHide = '.subatividade-9';
-            var toShow = '';
+        $('#btn-prev-10').on('click', function(e){
+            var toHide = '.subatividade-10';
+            var toShow = '.subatividade-9';
             btnPrevAtvd(toHide, toShow);
         });
     });

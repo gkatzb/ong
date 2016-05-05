@@ -198,12 +198,12 @@
         var $acertos = 0;
         var $dateIni = getDate();
 
-        $('.btn-atividade-9').on('click', function(e){
-            if($acertos < 33) {
+        $('.btn-atividade-11').on('click', function(e){
+            if($acertos < 25) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
             }
-            else if ($acertos >= 33){
+            else if ($acertos >= 25){
                 playSound('claps');
                 $(e).addClass('no-click');
                 $(e).attr('readonly', 'true');
@@ -219,11 +219,11 @@
                         },
                         function (isConfirm) {
                             if (isConfirm) {
-                                var sbtvId = $("#hdn_subatividade_id-9").val();
-                                var toHide = '.subatividade-9';
-                                var toShow = '.subatividade-10';
-                                var erros = $("#erros-9").val();
-                                var acertos = $("#acertos-9").val();
+                                var sbtvId = $("#hdn_subatividade_id-11").val();
+                                var toHide = '.subatividade-11';
+                                var toShow = '.subatividade-12';
+                                var erros = $("#erros-11").val();
+                                var acertos = $("#acertos-11").val();
                                 var dateFim = getDate();
                                 var no_errors = false;
 
@@ -231,7 +231,7 @@
                                     no_errors = true;
                                 }
 
-                                minTry(sbtvId, 32, acertos, erros, toHide, toShow, 9, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 25, acertos, erros, toHide, toShow, 11, $dateIni, dateFim, no_errors);
                             }
                         });
             }
@@ -242,7 +242,7 @@
                 var letra = $(this).attr('id');
                 if($(this).val().toUpperCase() == letra){
                     if(!$(this).hasClass('acerto-tbl')){
-                        $("#acertos-9").val($acertos++);
+                        $("#acertos-11").val($acertos++);
                     }
                     $(this).addClass('no-click');
                     $(this).attr('readonly', 'true');
@@ -263,7 +263,7 @@
                 } else if($(this).val().toUpperCase() != letra){
                     swal("Ops... Resposta errada!", "", "warning");
                     playSound('wrong');
-                    $("#erros-9").val($erros++);
+                    $("#erros-11").val($erros++);
                     $(this).addClass('erro-tbl');
                     $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
                     $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');
@@ -271,9 +271,9 @@
             }
         });
 
-        $('#btn-prev-9').on('click', function(e){
-            var toHide = '.subatividade-9';
-            var toShow = '';
+        $('#btn-prev-11').on('click', function(e){
+            var toHide = '.subatividade-11';
+            var toShow = '.subatividade-10';
             btnPrevAtvd(toHide, toShow);
         });
     });

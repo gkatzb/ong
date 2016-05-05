@@ -10,48 +10,48 @@
                 <table class="table-border table-responsive">
                     <tr>
                         <td class="text-center">
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td class="text-center">
-                            <input type="text" class="task_input" id="B"  readonly value="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="B"  readonly value="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="C"  readonly id="C" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="C"  readonly id="C" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="X"  readonly id="X" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="X"  readonly id="X" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="I" id="I" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="I" id="I" maxlength="1" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="C" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="C" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="X" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="X" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="I" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="I" maxlength="1" />
                         </td>
                     </tr>
                 </table>
@@ -63,48 +63,48 @@
                 <table class="table-border table-responsive">
                     <tr>
                         <td class="text-center">
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="B"  readonly id="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="B"  readonly id="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="C"  readonly id="C" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="C"  readonly id="C" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="T" id="T" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="T" id="T" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="E" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="E" id="E" maxlength="1" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="C" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="C" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="T" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="T" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="E" maxlength="1" />
                         </td>
                     </tr>
                 </table>
@@ -132,30 +132,30 @@
                 <table class="table-border table-responsive">
                     <tr>
                         <td class="text-center">
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="N" id="N" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="N" id="N" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="E" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="E" id="E" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="L" id="L" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="L" id="L" maxlength="1" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="N" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="N" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="E" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="L" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="L" maxlength="1" />
                         </td>
                     </tr>
                 </table>
@@ -167,42 +167,42 @@
                 <table class="table-border table-responsive">
                     <tr>
                         <td class="text-center">
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="B"  readonly id="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="B"  readonly id="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input"  readonly value="E" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a"  readonly value="E" id="E" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="L"  readonly id="L" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="L"  readonly id="L" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" value="H"  readonly id="H" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" value="H"  readonly id="H" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="B" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="B" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="E" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="E" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="L" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="L" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="H" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="H" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input" id="A" maxlength="1" />
+                            <input type="text" class="task_input task_input-a" id="A" maxlength="1" />
                         </td>
                     </tr>
                 </table>
@@ -267,7 +267,7 @@
             }
         });
 
-        $('.task_input').on('keyup', function(e){
+        $('.task_input-a').on('keyup', function(e){
             if(!$(this).is('[readonly]')){
                 var letra = $(this).attr('id');
                 if($(this).val().toUpperCase() == letra){
@@ -278,7 +278,7 @@
                     $(this).attr('readonly', 'true');
                     $(this).unbind('click');
                     $(this).addClass('acerto-tbl');
-                    if(!$(this).parent('table').find('.task_input').hasClass('erro-tbl')){
+                    if(!$(this).parent('table').find('.task_input-a').hasClass('erro-tbl')){
                         $(this).parent('table').parent('div').find('.icon-atv-error').addClass('hidden');
                         $(this).parent('table').parent('div').find('.icon-atv-check').removeClass('hidden');
                     }

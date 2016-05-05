@@ -396,8 +396,7 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .resp-soma{
 	border: 0;
 	padding: 0;
-	border-bottom: solid;
-	border-bottom-width: medium;
+	border: solid;
 	line-height: 50px;
 	margin-top: 14px;
 	font-size: 30px;
@@ -408,8 +407,7 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .input-soma{
 	border: 0;
 	padding: 0;
-	border-bottom: solid;
-	border-bottom-width: medium;
+	border: solid;
 	line-height: 50px;
 	margin-top: -95px;
 	font-size: 30px;

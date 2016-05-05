@@ -51,10 +51,10 @@
                             <input type="text" class="task_input task_input-o" value="C"  readonly id="C" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input task_input-o" id="U"  readonly id="U" maxlength="1" />
+                            <input type="text" class="task_input task_input-o" id="U"  readonly value="U" maxlength="1" />
                         </td>
                         <td>
-                            <input type="text" class="task_input task_input-o" id="L"  readonly id="L" maxlength="1" />
+                            <input type="text" class="task_input task_input-o" id="L"  readonly value="L" maxlength="1" />
                         </td>
                         <td>
                             <input type="text" class="task_input task_input-o"  id="O" maxlength="1" />
@@ -217,11 +217,11 @@
         var $dateIni = getDate();
 
         $('.btn-atividade-12').on('click', function(e){
-            if($acertos < 28) {
+            if($("#acertos-12").val() < 27) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
             }
-            else if ($acertos >= 28){
+            else if ($("#acertos-12").val() >= 27){
                 playSound('claps');
                 $(e).addClass('no-click');
                 $(e).attr('readonly', 'true');
@@ -249,7 +249,7 @@
                                     no_errors = true;
                                 }
 
-                                minTry(sbtvId, 28, acertos, erros, toHide, toShow, 12, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 27, acertos, erros, toHide, toShow, 12, $dateIni, dateFim, no_errors);
                             }
                         });
             }

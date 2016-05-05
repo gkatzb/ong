@@ -199,11 +199,11 @@
         var $dateIni = getDate();
 
         $('.btn-atividade-11').on('click', function(e){
-            if(parseInt($("#acertos-10").val()) < 24) {
+            if(parseInt($("#acertos-11").val()) < 23) {
                 swal("Ops... Alguma resposta está errada!", "", "warning");
                 playSound('wrong');
             }
-            else if (parseInt($("#acertos-10").val()) >= 24){
+            else if (parseInt($("#acertos-11").val()) >= 23){
                 playSound('claps');
                 $(e).addClass('no-click');
                 $(e).attr('readonly', 'true');
@@ -231,7 +231,7 @@
                                     no_errors = true;
                                 }
 
-                                minTry(sbtvId, 24, acertos, erros, toHide, toShow, 11, $dateIni, dateFim, no_errors);
+                                minTry(sbtvId, 23, acertos, erros, toHide, toShow, 11, $dateIni, dateFim, no_errors);
                             }
                         });
             }

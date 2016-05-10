@@ -529,3 +529,108 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 .icon-atv-check-tbl{
 	font-size: 90px;
 }
+
+.img-sing-plur{
+	width: 20%;
+	cursor: auto;
+}
+
+.input-sing-plur{
+	width: 300px !important;
+}
+
+.col-tubarao, .col-violao, .col-dragao, .col-aviao, .col-mamao{
+	text-align: center;
+}
+
+/*.col-dragao, .col-aviao, .col-mamao{
+	text-align: left;
+}*/
+
+.col-tubarao, .col-aviao, .col-mamao, .col-violao, .col-dragao{
+	margin-bottom: 150px;
+}
+
+.input-sing-plur {
+	width: 300px !important;
+	margin-top: 45px !important;
+}
+
+.input-plur {
+	width: 32px !important;
+	height: 30px !important;
+	border: none;
+	text-align: center;
+}
+
+.genero-bg-img{
+	width: 100%;
+}
+
+.genero-bg{
+	z-index: -3000;
+	position: absolute;
+}
+
+.genero-bg-front{
+	z-index: 3000;
+	position: relative;
+}
+
+.left-numbers, .right-numbers{
+	font-size: 15pt;
+}
+
+.left-numbers{
+	padding-right: 85px;
+	text-align: right;
+}
+
+.right-numbers{
+	padding-left: 30px;
+}
+
+.spn-genero{
+	font-size: 16pt;
+}
+
+.icon-gen-check, .icon-gen-error{
+	font-size: 23px;
+}
+
+.icon-gen-check{
+	color: green;
+}
+
+.icon-gen-error{
+	color: red;
+}
+
+.words-substantivo{
+	font-size: 30px;
+	text-align: center;
+}
+
+.tbl-substantivos{
+	min-width: 300px !important;
+	border: solid;
+	width: 100%;
+	text-align: center;
+	margin-top: 90px !important;
+}
+
+.tbl-substantivos th, .tbl-substantivos td{
+	border: solid;
+	text-align: center;
+}
+
+.substantivo-bg{
+	margin-right: 0px;
+	float: right;
+	margin-left: 928px;
+	margin-top: 139px;
+}
+
+.container-subst{
+	margin-left: -34px !important;
+}

@@ -88,7 +88,7 @@
 			</div>
 			<div class="col-sm-6">
 				<div class="col-sm-4">
-					<img src="images/abacate.png">
+					{!! Html::image('/assets/img/portugues/aviao.png', 'aviao', ['class' => 'img-atividade img-sing-plur img-atividade img-sing-plur-u']) !!}
 				</div>
 				<div class="col-sm-6 task text-uppercase">
 					<div class="tbl_complete">

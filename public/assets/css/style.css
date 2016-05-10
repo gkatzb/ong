@@ -562,6 +562,12 @@ h4, h5, h6, a, input, .sweet-alert, .showSweetAlert{
 	border: none;
 	text-align: center;
 }
+.input-subs {
+	width: 100% !important;
+	height: 30px !important;
+	border: none;
+	text-align: center;
+}
 
 .genero-bg-img{
 	width: 100%;

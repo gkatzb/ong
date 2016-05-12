@@ -142,6 +142,7 @@
             var toShow = '';
             var erros = $("#erros-14").val();
             var acertos = $("#acertos-14").val();
+            var acertos = $("#acertos-14").val();
             var dateFim = getDate();
             var no_errors = false;
 
@@ -152,7 +153,7 @@
             minTry(sbtvId, 24, acertos, erros, toHide, toShow, 6, dateIni, dateFim, no_errors);
         });
 
-        $('#btn-prev-8').on('click', function () {
+        $('#btn-prev-14').on('click', function () {
             var toHide = '.subatividade-14';
             var toShow = '';
             btnPrevAtvd(toHide, toShow);

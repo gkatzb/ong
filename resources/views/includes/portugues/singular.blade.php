@@ -69,7 +69,7 @@
             minTry(sbtvId, 5, acertos, erros, toHide, toShow, 7, dateIni, dateFim, no_errors);
         });
 
-        $('#btn-prev-8').on('click', function () {
+        $('#btn-prev-16').on('click', function () {
             var toHide = '.subatividade-16';
             var toShow = '.subatividade-15';
             btnPrevAtvd(toHide, toShow);

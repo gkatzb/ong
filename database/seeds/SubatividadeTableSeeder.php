@@ -26,7 +26,7 @@ class SubatividadeTableSeeder extends Seeder
             ['id_atividade' => 5, 'nome' => 'Complete com a vogal O e copie as palavras:', 'url' => 'complete_o'],
             ['id_atividade' => 5, 'nome' => 'Complete com a vogal U e copie as palavras:', 'url' => 'complete_u'],
             ['id_atividade' => 6, 'nome' => 'Observe as palavras e numere o masculino com o feminino:', 'url' => 'genero'],
-            ['id_atividade' => 7, 'nome' => 'Reescreva a frase trocando as figuras pelo seu plural:', 'url' => 'sing_plural'],
+            ['id_atividade' => 7, 'nome' => 'Escreva as figuras no plural:', 'url' => 'sing_plural'],
             ['id_atividade' => 7, 'nome' => 'Reescreva as figuras da atividade anterior no singular:', 'url' => 'singular'],
             ['id_atividade' => 8, 'nome' => 'Separe os substantivos comuns dos próprios:', 'url' => 'substantivos']
         ];

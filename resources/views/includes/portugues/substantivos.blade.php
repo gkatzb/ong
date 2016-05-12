@@ -149,10 +149,10 @@
                 no_errors = true;
             }
 
-            minTry(sbtvId, 24, acertos, erros, toHide, toShow, 8, dateIni, dateFim, no_errors);
+            minTry(sbtvId, 11, acertos, erros, toHide, toShow, 8, dateIni, dateFim, no_errors);
         });
 
-        $('#btn-prev-8').on('click', function () {
+        $('#btn-prev-17').on('click', function () {
             var toHide = '.subatividade-17';
             var toShow = '';
             btnPrevAtvd(toHide, toShow);

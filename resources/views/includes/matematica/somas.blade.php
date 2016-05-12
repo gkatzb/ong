@@ -220,9 +220,107 @@
             }
         }
 
+        function checkAnswer(e){
+            var sum = $(e).attr('id');
+            if($(e).val() == sum){
+                if(!$(e).hasClass('acerto')){
+                    $("#acertos-3").val($acertos++);
+                }
+                $(e).addClass('no-click');
+                $(e).attr('readonly', 'true');
+                $(e).unbind('click');
+                $(e).addClass('acerto');
+                $(e).parent('div').next('div').find('.icon-atv-error').addClass('hidden');
+                $(e).parent('div').next('div').find('.icon-atv-check').removeClass('hidden');
+            } else if($(e).val() != sum){
+                $("#erros-3").val($erros++);
+                $(e).addClass('erro');
+                $(e).parent('div').next('div').find('.icon-atv-error').removeClass('hidden');
+            }
+
+            var soma1 = $(e).parent('div').find('.input-soma1').attr('id');
+            if($(soma1).val() == num1){
+                if(!$(soma1).hasClass('acerto')){
+                    $("#acertos-3").val($acertos++);
+                }
+                $(soma1).addClass('no-click');
+                $(soma1).attr('readonly', 'true');
+                $(soma1).unbind('click');
+                $(soma1).addClass('acerto');
+                $(soma1).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
+                $(soma1).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
+            } else if($(soma1).val() != num1){
+                $("#erros-3").val($erros++);
+                $(soma1).addClass('erro');
+                $(soma1).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
+                $(soma1).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
+            }
+
+            var soma2 = $(e).parent('div').find('.input-soma2').attr('id');
+            if($(soma2).val() == num2){
+                if(!$(soma2).hasClass('acerto')){
+                    $("#acertos-3").val($acertos++);
+                }
+                $(soma2).addClass('no-click');
+                $(soma2).attr('readonly', 'true');
+                $(soma2).unbind('click');
+                $(soma2).addClass('acerto');
+                if(!$(soma2).parent('div').find('.input-soma1').hasClass('erro')){
+                    $(soma2).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
+                    $(soma2).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
+                }
+            } else if($(soma2).val() != num2){
+                $("#erros-3").val($erros++);
+                $(soma2).addClass('erro');
+                $(soma2).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
+                $(soma2).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
+            }
+
+            if ($(e).val() == sum && soma1 == num1 && soma2 == num2) {
+                swal("Ops... Alguma resposta está errada!", "", "warning");
+                playSound('wrong');
+            } else if ($(e).val() != sum || soma1 != num1 || soma2 != num2){
+                playSound('claps');
+                $(e).addClass('no-click');
+                $(e).attr('readonly', 'true');
+                $(e).unbind('click');
+                $(e).addClass('acerto');
+                $(e).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
+                $(e).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
+                swal({
+                        title: "Parabéns, você acertou todas as respostas!",
+                        type: "success",
+                        showCancelButton: false,
+                        closeOnConfirm: true
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+
+                            var sbtvId = $("#hdn_subatividade_id-3").val();
+                            var toHide = '';
+                            var toShow = '';
+                            var erros = $("#erros-3").val();
+                            var acertos = $("#acertos-3").val();
+                            var dateFim = getDate();
+                            var no_errors = false;
+
+                            if(erros == 0){
+                                no_errors = true;
+                            }
+
+                            minTry(sbtvId, 11, acertos, erros, toHide, toShow, 3, $dateIni, dateFim, no_errors);
+                        }
+                });
+            }
+        }
+
         $('.btn-atividade-3').on('click', function (e) {
             checkAnswers(e);
         });
+        
+        /*$('.resp-soma').on('blur', function(){
+            
+        });*/
 
         $('#btn-prev-3').on('click', function () {
             var toHide = '';

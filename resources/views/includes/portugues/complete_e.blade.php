@@ -248,23 +248,45 @@
 <script>
     $(document).ready(function () {
 
-        var $erros = 0;
-        var $acertos = 0;
+        var erros = 0;
+        var acertos = 0;
         var $dateIni = getDate();
 
         $('.btn-atividade-10').on('click', function(e){
-            if(parseInt($("#acertos-10").val()) < 34) {
-                swal("Ops... Alguma resposta está errada!", "", "warning");
-                playSound('wrong');
-            }
-            else if (parseInt($("#acertos-10").val()) >= 34){
+            console.log(erros);
+            console.log(acertos);
+            $('.task_input-e').each(function(e){
+                if(!$(this).is('[readonly]')){
+                    var letra = $(this).attr('id');
+                    if($(this).val().toUpperCase() == letra){
+                        if(!$(this).hasClass('acerto-tbl')){
+                            $("#acertos-10").val(acertos++);
+                        }
+                        $(this).addClass('no-click');
+                        $(this).attr('readonly', 'true');
+                        $(this).unbind('click');
+                        $(this).addClass('acerto-tbl');
+                        if(!$(this).parent('table').find('.task_input-e').hasClass('erro-tbl')){
+                            $(this).parent('table').parent('div').find('.icon-atv-error').addClass('hidden');
+                            $(this).parent('table').parent('div').find('.icon-atv-check').removeClass('hidden');
+                        }
+                    } else if($(this).val().toUpperCase() != letra){
+                        if($(this).val() != ''){
+                            swal("Ops... Alguma resposta está errada!", "", "warning");
+                            playSound('wrong');
+                            $("#erros-10").val(erros++);
+                            $(this).addClass('erro-tbl');
+                            $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
+                            $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');
+                        } else if($(this).val() == ''){
+                            swal("Ops... Atividade incompleta!", "", "warning");
+                            playSound('wrong');
+                        }
+                    }
+                }
+            });
+            if (acertos >= 35){
                 playSound('claps');
-                $(e).addClass('no-click');
-                $(e).attr('readonly', 'true');
-                $(e).unbind('click');
-                $(e).addClass('acerto');
-                $(e).parent('table').parent('div').find('.icon-atv-error').addClass('hidden');
-                $(e).parent('table').parent('div').find('.icon-atv-check').removeClass('hidden');
                 swal({
                             title: "Parabéns, você acertou todas as respostas!",
                             type: "success",
@@ -284,44 +306,9 @@
                                 if(erros == 0){
                                     no_errors = true;
                                 }
-
                                 minTry(sbtvId, 34, acertos, erros, toHide, toShow, 5, $dateIni, dateFim, no_errors);
                             }
                         });
-            }
-        });
-
-        $('.task_input-e').on('keyup', function(e){
-            if(!$(this).is('[readonly]')){
-                var letra = $(this).attr('id');
-                if($(this).val().toUpperCase() == letra){
-                    if(!$(this).hasClass('acerto-tbl')){
-                        $("#acertos-10").val($acertos++);
-                    }
-                    $(this).addClass('no-click');
-                    $(this).attr('readonly', 'true');
-                    $(this).unbind('click');
-                    $(this).addClass('acerto-tbl');
-                    if(!$(this).parent('table').find('.task_input-e').hasClass('erro-tbl')){
-                        $(this).parent('table').parent('div').find('.icon-atv-error').addClass('hidden');
-                        $(this).parent('table').parent('div').find('.icon-atv-check').removeClass('hidden');
-                    }
-                    playSound('claps');
-                    swal({
-                        title: "Parabéns, a resposta está correta!",
-                        type: "success",
-                        showCancelButton: false,
-                        closeOnConfirm: true
-                    });
-
-                } else if($(this).val().toUpperCase() != letra){
-                    swal("Ops... Resposta errada!", "", "warning");
-                    playSound('wrong');
-                    $("#erros-10").val($erros++);
-                    $(this).addClass('erro-tbl');
-                    $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
-                    $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');
-                }
             }
         });
 

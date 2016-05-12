@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/Model.php" afterPath="$PROJECT_DIR$/database/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/complete_e.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/complete_e.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/complete_i.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/complete_i.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/complete_o.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/complete_o.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/complete_u.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/complete_u.blade.php" />
     </list>
     <ignored path="ong.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="complete_u.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="complete_u.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/complete_u.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,12 +147,12 @@
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/singular.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/genero.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" />
-        <option value="$PROJECT_DIR$/database/Model.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_e.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_i.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_o.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_u.blade.php" />
+        <option value="$PROJECT_DIR$/database/Model.php" />
       </list>
     </option>
   </component>
@@ -532,12 +536,12 @@
       <workItem from="1462163241476" duration="12846000" />
       <workItem from="1462193101980" duration="13718000" />
       <workItem from="1462390355031" duration="14752000" />
-      <workItem from="1462829850493" duration="33023000" />
+      <workItem from="1462829850493" duration="33245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199360000" />
+    <option name="totallyTimeSpent" value="199582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -917,14 +921,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="76" column="29" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -961,6 +957,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

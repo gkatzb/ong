@@ -44,7 +44,6 @@ class CustomModel extends Model
             'actvDesemp' => $actvDesemp[0],
             'totalActvDesemp' => $totalActvDesemp[0]
         ];
-        print_r($resp);
         return $resp;
     }
 
@@ -59,7 +58,6 @@ class CustomModel extends Model
             ->groupBy('atividade.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
-        print_r($desempenho);
         return $desempenho;
     }
 
@@ -74,7 +72,6 @@ class CustomModel extends Model
             ->groupBy('user.id')
             ->orderBy('desempenho.created_at', 'desc')
             ->get();
-        print_r($desempenho);
         return $desempenho;
     }
 

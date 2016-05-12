@@ -87,7 +87,7 @@
             var palavra = $(this).val().toUpperCase();
             for (var i = 0; i <= arrComum.length; i++) {
                 if (palavra == arrComum[i]) {
-                    if (acertos < 11) {
+                    if (acertos < 24) {
                         $("#acertos-17").val(acertos++ + 1);
                     }
                     swal("Parabéns, resposta certa!", "", "success");
@@ -114,7 +114,7 @@
             var palavra = $(this).val().toUpperCase();
             for (var i = 0; i <= arrProprio.length; i++) {
                 if (palavra == arrProprio[i]) {
-                    if (acertos < 11) {
+                    if (acertos < 24) {
                         $("#acertos-17").val(acertos++ + 1);
                     }
                     swal("Parabéns, resposta certa!", "", "success");
@@ -149,7 +149,7 @@
                 no_errors = true;
             }
 
-            minTry(sbtvId, 11, acertos, erros, toHide, toShow, 8, dateIni, dateFim, no_errors);
+            minTry(sbtvId, 24, acertos, erros, toHide, toShow, 8, dateIni, dateFim, no_errors);
         });
 
         $('#btn-prev-17').on('click', function () {

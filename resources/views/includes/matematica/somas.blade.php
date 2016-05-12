@@ -135,7 +135,8 @@
                     $(this).parent('div').next('div').find('.icon-atv-error').addClass('hidden');
                     $(this).parent('div').next('div').find('.icon-atv-check').removeClass('hidden');
                 } else if($(this).val() != sum){
-                    $("#erros-3").val($erros++);
+                    $erros = $erros+1;
+                    $("#erros-3").val($erros);
                     $(this).addClass('erro');
                     $(this).parent('div').next('div').find('.icon-atv-error').removeClass('hidden');
                 }
@@ -154,7 +155,8 @@
                     $(this).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
                     $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                 } else if($(this).val() != num1){
-                    $("#erros-3").val($erros++);
+                    $erros = $erros+1;
+                    $("#erros-3").val($erros);
                     $(this).addClass('erro');
                     $(this).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                     $(this).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
@@ -176,7 +178,8 @@
                         $(this).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                     }
                 } else if($(this).val() != num2){
-                    $("#erros-3").val($erros++);
+                    $erros = $erros+1;
+                    $("#erros-3").val($erros);
                     $(this).addClass('erro');
                     $(this).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                     $(this).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
@@ -233,7 +236,8 @@
                 $(e).parent('div').next('div').find('.icon-atv-error').addClass('hidden');
                 $(e).parent('div').next('div').find('.icon-atv-check').removeClass('hidden');
             } else if($(e).val() != sum){
-                $("#erros-3").val($erros++);
+                $erros = $erros+1;
+                $("#erros-3").val($erros);
                 $(e).addClass('erro');
                 $(e).parent('div').next('div').find('.icon-atv-error').removeClass('hidden');
             }
@@ -250,7 +254,8 @@
                 $(soma1).parent('div').prev('div').find('.icon-atv-error').addClass('hidden');
                 $(soma1).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
             } else if($(soma1).val() != num1){
-                $("#erros-3").val($erros++);
+                $erros = $erros+1;
+                $("#erros-3").val($erros);
                 $(soma1).addClass('erro');
                 $(soma1).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                 $(soma1).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');
@@ -270,7 +275,8 @@
                     $(soma2).parent('div').prev('div').find('.icon-atv-check').removeClass('hidden');
                 }
             } else if($(soma2).val() != num2){
-                $("#erros-3").val($erros++);
+                $erros = $erros+1;
+                $("#erros-3").val($erros);
                 $(soma2).addClass('erro');
                 $(soma2).parent('div').prev('div').find('.icon-atv-check').addClass('hidden');
                 $(soma2).parent('div').prev('div').find('.icon-atv-error').removeClass('hidden');

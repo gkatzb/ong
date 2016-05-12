@@ -57,7 +57,8 @@
                 playSound('claps');
                 $(this).next('span').addClass('acerto');
             } else {
-                $("#erros-4").val(erros++ + 1);
+                erros = erros+1;
+                $("#erros-4").val(erros);
                 swal("Ops... Resposta errada!", "", "warning");
                 playSound('wrong');
                 $(this).next('span').addClass('erro');

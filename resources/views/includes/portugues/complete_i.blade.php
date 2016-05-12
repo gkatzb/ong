@@ -199,8 +199,6 @@
         var $dateIni = getDate();
 
         $('.btn-atividade-11').on('click', function(e){
-            console.log(erros);
-            console.log(acertos);
             $('.task_input-i').each(function(e){
                 if(!$(this).is('[readonly]')){
                     var letra = $(this).attr('id');
@@ -218,12 +216,13 @@
                         }
                     } else if($(this).val().toUpperCase() != letra){
                         if($(this).val() != ''){
-                            swal("Ops... Alguma resposta está errada!", "", "warning");
-                            playSound('wrong');
-                            $("#erros-11").val(erros++);
+                            erros = erros+1;
+                            $("#erros-11").val(erros);
                             $(this).addClass('erro-tbl');
                             $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
                             $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');
+                            swal("Ops... Alguma resposta está errada!", "", "warning");
+                            playSound('wrong');
                         } else if($(this).val() == ''){
                             swal("Ops... Atividade incompleta!", "", "warning");
                             playSound('wrong');

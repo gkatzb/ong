@@ -217,8 +217,6 @@
         var $dateIni = getDate();
 
         $('.btn-atividade-12').on('click', function(e){
-            console.log(erros);
-            console.log(acertos);
             $('.task_input-o').each(function(e){
                 if(!$(this).is('[readonly]')){
                     var letra = $(this).attr('id');
@@ -238,7 +236,8 @@
                         if($(this).val() != ''){
                             swal("Ops... Alguma resposta está errada!", "", "warning");
                             playSound('wrong');
-                            $("#erros-12").val(erros++);
+                            erros = erros+1;
+                            $("#erros-12").val(erros);
                             $(this).addClass('erro-tbl');
                             $(this).parent('table').parent('div').find('.icon-atv-check').addClass('hidden');
                             $(this).parent('table').parent('div').find('.icon-atv-error').removeClass('hidden');

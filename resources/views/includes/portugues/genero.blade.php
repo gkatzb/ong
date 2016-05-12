@@ -128,11 +128,13 @@
                 $(this).unbind('click');
                 $(this).attr('disabled', true);
             } else {
-                $("#erros-14").val(erros++ + 1);
-                swal("Ops... Resposta errada!", "", "warning");
-                playSound('wrong');
-                $(this).next('.icon-gen-check').next('.icon-gen-error').removeClass('hidden');
-                $(this).addClass('erro');
+                if($(this).val() != ''){
+                    $("#erros-14").val(erros++ + 1);
+                    swal("Ops... Resposta errada!", "", "warning");
+                    playSound('wrong');
+                    $(this).next('.icon-gen-check').next('.icon-gen-error').removeClass('hidden');
+                    $(this).addClass('erro');
+                }
             }
         });
 
@@ -141,7 +143,6 @@
             var toHide = '';
             var toShow = '';
             var erros = $("#erros-14").val();
-            var acertos = $("#acertos-14").val();
             var acertos = $("#acertos-14").val();
             var dateFim = getDate();
             var no_errors = false;

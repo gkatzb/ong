@@ -58,7 +58,7 @@
                 (<input class="8 input-plur" id="2" />)&nbsp;BARONESA
                 <i class="hidden icon-gen-check icon-gen-check-4 fa fa-check fa-3x margin-bottom"></i>
                 <i class="hidden icon-gen-error icon-gen-error-8 fa fa-times fa-3x margin-bottom"></i><br/>
-                (<input class="8 input-plur" id="17" />)&nbsp;MADASTRA
+                (<input class="8 input-plur" id="17" />)&nbsp;MADRASTA
                 <i class="hidden icon-gen-check icon-gen-check-4 fa fa-check fa-3x margin-bottom"></i>
                 <i class="hidden icon-gen-error icon-gen-error-8 fa fa-times fa-3x margin-bottom"></i><br/>
                 (<input class="8 input-plur" id="8" />)&nbsp;MADRE

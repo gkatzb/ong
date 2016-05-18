@@ -13,7 +13,7 @@ class SubatividadeTableSeeder extends Seeder
     {
         $data = [
             ['id_atividade' => 1, 'nome' => 'Procure os números iguais:', 'url' => 'numeros_iguais'],
-            ['id_atividade' => 2, 'nome' => 'Ligue a figura à quantidade certa:', 'url' => 'qtd_certa'],
+            ['id_atividade' => 2, 'nome' => 'Selecione o número correspondente com a imagem em destaque:', 'url' => 'qtd_certa'],
             ['id_atividade' => 3, 'nome' => 'Resolva as somas:', 'url' => 'somas'],
             ['id_atividade' => 4, 'nome' => 'Encontre os objetos que comecem com a vogal A:', 'url' => 'encontre_a'],
             ['id_atividade' => 4, 'nome' => 'Encontre os objetos que comecem com a vogal E:', 'url' => 'encontre_e'],

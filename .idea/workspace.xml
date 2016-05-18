@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" />
-    </list>
+    <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="" />
     <ignored path="ong.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -496,12 +494,12 @@
       <workItem from="1462390355031" duration="14752000" />
       <workItem from="1462829850493" duration="35411000" />
       <workItem from="1463191297570" duration="677000" />
-      <workItem from="1463527685866" duration="919000" />
+      <workItem from="1463527685866" duration="1050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203344000" />
+    <option name="totallyTimeSpent" value="203475000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />

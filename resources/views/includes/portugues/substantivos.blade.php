@@ -77,10 +77,10 @@
         var erros = 0;
         var acertos = 0;
         var dateIni = getDate();
-        var arrComum = ['ÁGUA', 'URANO', 'ABELHA', 'ESPADA', 'SAPATO', 'BERMUDA', 'BOLA', 'RUA', 'PESSOA', 'CHUVA',
+        var arrComum = ['ÁGUA', 'VERÃO', 'ABELHA', 'ESPADA', 'SAPATO', 'BERMUDA', 'BOLA', 'RUA', 'PESSOA', 'CHUVA',
             'AMOR', 'GLOBO'];
         var arrProprio = ['PARAGUAI', 'RORAIMA', 'ATLÂNTICO', 'DIAMANTINA', 'PEDRO', 'MARIANA', 'BAHIA', 'CARLOS',
-            'VERÃO', 'NILO', 'BELÉM', 'MARAJÓ'];
+            'URANO', 'NILO', 'BELÉM', 'MARAJÓ'];
 
         $('.comum').on('blur', function () {
             var isCorrect = false;

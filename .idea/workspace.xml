@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d279cac6-f288-4719-aec7-f58c37797009" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" afterPath="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" />
     </list>
     <ignored path="ong.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SubatividadeTableSeeder.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php">
+      <file leaf-file-name="substantivos.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AtividadeTableSeeder.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/AtividadeTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-817">
+              <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -87,7 +76,6 @@
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/sing_plural.blade.php" />
         <option value="$PROJECT_DIR$/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/singular.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_e.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/complete_i.blade.php" />
@@ -104,6 +92,7 @@
         <option value="$PROJECT_DIR$/resources/views/desempenho.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/includes/portugues/genero.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php" />
+        <option value="$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php" />
       </list>
     </option>
   </component>
@@ -507,12 +496,12 @@
       <workItem from="1462390355031" duration="14752000" />
       <workItem from="1462829850493" duration="35411000" />
       <workItem from="1463191297570" duration="677000" />
-      <workItem from="1463527685866" duration="681000" />
+      <workItem from="1463527685866" duration="919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203106000" />
+    <option name="totallyTimeSpent" value="203344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -748,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/complete_a.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -916,6 +898,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/AtividadeTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -924,10 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SubatividadeTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/includes/portugues/substantivos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+        <state relative-caret-position="-817">
+          <caret line="79" column="38" selection-start-line="79" selection-start-column="38" selection-end-line="79" selection-end-column="38" />
           <folding />
         </state>
       </provider>

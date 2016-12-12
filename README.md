@@ -1,3 +1,20 @@
+# ADID - UP
+
+## Porpouse
+
+
+## ONG
+
+
+# Contact
+
+- Gabriela Katz
+-- Full-stack developer
+
+Skype: gabrielakatzb
+Linkedin:
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
